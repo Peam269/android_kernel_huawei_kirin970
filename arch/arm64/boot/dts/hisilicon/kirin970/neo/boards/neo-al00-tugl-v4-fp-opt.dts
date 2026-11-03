@@ -6281,3 +6281,5 @@
 		cc_anti_corrosion = "/cc_anti_corrosion";
 	};
 };
+
+/include/ "../overlays/neo-al00-tugl-v4-fp-opt.dtsi"

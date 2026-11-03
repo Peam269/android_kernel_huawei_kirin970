@@ -6351,3 +6351,5 @@
 		gpio215_cfg_idle = "/sec_pinmux@fff11800/gpio215_cfg_idle";
 	};
 };
+
+/include/ "../overlays/eml-al00-tugl-v3.dtsi"

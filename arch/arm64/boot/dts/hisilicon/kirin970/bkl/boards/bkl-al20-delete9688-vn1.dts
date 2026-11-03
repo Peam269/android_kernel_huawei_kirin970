@@ -4992,3 +4992,5 @@
 		ptn5150h_typec = "/amba/i2c@FDF0D000/typec@1E";
 	};
 };
+
+/include/ "../overlays/bkl-al20-delete9688-vn1.dtsi"

@@ -3039,3 +3039,5 @@
 		phandle = <0x64c>;
 	};
 };
+
+/include/ "../overlays/bla-al00-tugl-v1.dtsi"

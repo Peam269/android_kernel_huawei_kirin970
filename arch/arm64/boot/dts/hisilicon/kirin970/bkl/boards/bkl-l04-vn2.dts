@@ -7,3 +7,5 @@
 	hisi,boardname = "BKL_L04_VN2";
 	hisi,modem_id = <0x39620400>;
 };
+
+/include/ "../overlays/bkl-l04-vn2.dtsi"

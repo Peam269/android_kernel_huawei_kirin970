@@ -8,3 +8,5 @@
 	hisi,modem_id = <0x39038c00>;
 	hisi,product_id = <0x39038c00>;
 };
+
+/include/ "../overlays/clt-l0j-dcm-v1.dtsi"

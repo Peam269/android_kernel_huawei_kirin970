@@ -2357,3 +2357,5 @@
 		cc_anti_corrosion = "/cc_anti_corrosion";
 	};
 };
+
+/include/ "../overlays/bla-lx9-ba09-lx9-vn1-rf.dtsi"

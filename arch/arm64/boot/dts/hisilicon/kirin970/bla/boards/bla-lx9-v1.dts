@@ -2318,3 +2318,5 @@
 		phandle = <0x654>;
 	};
 };
+
+/include/ "../overlays/bla-lx9-v1.dtsi"

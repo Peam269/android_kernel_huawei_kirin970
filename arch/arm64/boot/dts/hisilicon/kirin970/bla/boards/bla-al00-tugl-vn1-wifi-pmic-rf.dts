@@ -3146,3 +3146,5 @@
 		modem_pinctrl = "/modem_pinctrl";
 	};
 };
+
+/include/ "../overlays/bla-al00-tugl-vn1-wifi-pmic-rf.dtsi"

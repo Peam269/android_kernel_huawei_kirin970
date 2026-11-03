@@ -8,3 +8,5 @@
 	hisi,modem_id = <0x39030000>;
 	hisi,product_id = <0x39030000>;
 };
+
+/include/ "../overlays/clt-al00-tugl-v1.dtsi"

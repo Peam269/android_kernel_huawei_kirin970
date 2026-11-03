@@ -2063,3 +2063,5 @@
 		antenna_board_adc_match = "/antenna_board_adc_match";
 	};
 };
+
+/include/ "../overlays/col-al00-vc.dtsi"

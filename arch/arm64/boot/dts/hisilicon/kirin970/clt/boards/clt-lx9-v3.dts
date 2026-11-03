@@ -8,3 +8,5 @@
 	hisi,modem_id = <0x39033000>;
 	hisi,product_id = <0x39033000>;
 };
+
+/include/ "../overlays/clt-lx9-v3.dtsi"

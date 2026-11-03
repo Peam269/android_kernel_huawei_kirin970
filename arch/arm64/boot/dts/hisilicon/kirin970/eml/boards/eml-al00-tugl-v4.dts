@@ -6311,3 +6311,5 @@
 		cc_anti_corrosion = "/cc_anti_corrosion";
 	};
 };
+
+/include/ "../overlays/eml-al00-tugl-v4.dtsi"

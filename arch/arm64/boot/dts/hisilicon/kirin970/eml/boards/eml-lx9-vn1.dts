@@ -6270,3 +6270,5 @@
 		cc_anti_corrosion = "/cc_anti_corrosion";
 	};
 };
+
+/include/ "../overlays/eml-lx9-vn1.dtsi"

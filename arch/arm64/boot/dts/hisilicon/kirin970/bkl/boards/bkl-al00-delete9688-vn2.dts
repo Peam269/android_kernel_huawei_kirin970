@@ -7226,3 +7226,5 @@
 		dsi_bkl_vn2_truly_nt36672_5p99 = "/lcdkit_bkl_vn2_truly_nt36672_5p99";
 	};
 };
+
+/include/ "../overlays/bkl-al00-delete9688-vn2.dtsi"

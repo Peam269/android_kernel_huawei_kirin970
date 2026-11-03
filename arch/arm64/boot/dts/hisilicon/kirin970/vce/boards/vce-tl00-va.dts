@@ -18,3 +18,5 @@
 		};
 	};
 };
+
+/include/ "../overlays/vce-tl00-va.dtsi"

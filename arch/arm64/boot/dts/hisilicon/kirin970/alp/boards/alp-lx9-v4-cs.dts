@@ -92,3 +92,5 @@
 		usb_switch = <0x00>;
 	};
 };
+
+/include/ "../overlays/alp-lx9-v4-cs.dtsi"

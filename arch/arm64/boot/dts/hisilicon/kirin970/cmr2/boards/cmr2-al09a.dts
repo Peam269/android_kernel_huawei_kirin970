@@ -9656,3 +9656,5 @@
 		huawei_dual_charger = "/huawei_dual_charger";
 	};
 };
+
+/include/ "../overlays/cmr2-al09a.dtsi"

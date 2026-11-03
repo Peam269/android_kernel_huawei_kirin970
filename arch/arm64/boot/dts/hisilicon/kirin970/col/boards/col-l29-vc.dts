@@ -2092,3 +2092,5 @@
 		antenna_board_adc_match = "/antenna_board_adc_match";
 	};
 };
+
+/include/ "../overlays/col-l29-vc.dtsi"

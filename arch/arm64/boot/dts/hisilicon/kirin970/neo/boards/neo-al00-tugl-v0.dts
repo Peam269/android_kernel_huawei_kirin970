@@ -6264,3 +6264,5 @@
 		};
 	};
 };
+
+/include/ "../overlays/neo-al00-tugl-v0.dtsi"

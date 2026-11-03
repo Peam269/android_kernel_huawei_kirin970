@@ -40,3 +40,5 @@
 		};
 	};
 };
+
+/include/ "../overlays/rvl-al09a-al09b.dtsi"

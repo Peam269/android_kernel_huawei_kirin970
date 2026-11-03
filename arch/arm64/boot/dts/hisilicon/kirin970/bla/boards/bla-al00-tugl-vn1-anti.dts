@@ -3158,3 +3158,5 @@
 		cc_anti_corrosion = "/cc_anti_corrosion";
 	};
 };
+
+/include/ "../overlays/bla-al00-tugl-vn1-anti.dtsi"

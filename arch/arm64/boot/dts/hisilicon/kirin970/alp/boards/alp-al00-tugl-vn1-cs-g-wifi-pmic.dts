@@ -107,3 +107,5 @@
 		modem_pinctrl = "/modem_pinctrl";
 	};
 };
+
+/include/ "../overlays/alp-al00-tugl-vn1-cs-g-wifi-pmic.dtsi"

@@ -33,3 +33,5 @@
 		usb_switch = <0x00>;
 	};
 };
+
+/include/ "../overlays/alp-al00-tugl-v1-cs.dtsi"

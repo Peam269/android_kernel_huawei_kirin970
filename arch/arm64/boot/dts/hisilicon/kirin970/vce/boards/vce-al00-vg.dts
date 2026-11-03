@@ -35,3 +35,5 @@
 		huawei_ov20880 = "/huawei,ov20880";
 	};
 };
+
+/include/ "../overlays/vce-al00-vg.dtsi"

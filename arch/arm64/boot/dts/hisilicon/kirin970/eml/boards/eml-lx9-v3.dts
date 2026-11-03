@@ -6310,3 +6310,5 @@
 		gpio215_cfg_idle = "/sec_pinmux@fff11800/gpio215_cfg_idle";
 	};
 };
+
+/include/ "../overlays/eml-lx9-v3.dtsi"

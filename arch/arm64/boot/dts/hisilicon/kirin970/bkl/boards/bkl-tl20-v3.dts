@@ -7912,3 +7912,5 @@
 		phandle = <0x6ad>;
 	};
 };
+
+/include/ "../overlays/bkl-tl20-v3.dtsi"

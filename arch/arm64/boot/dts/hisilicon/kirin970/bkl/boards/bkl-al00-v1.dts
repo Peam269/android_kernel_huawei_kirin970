@@ -5085,3 +5085,5 @@
 		phandle = <0x6ad>;
 	};
 };
+
+/include/ "../overlays/bkl-al00-v1.dtsi"

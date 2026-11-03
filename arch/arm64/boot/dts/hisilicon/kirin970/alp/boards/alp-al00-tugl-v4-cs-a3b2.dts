@@ -90,3 +90,5 @@
 		modem_pinctrl = "/modem_pinctrl";
 	};
 };
+
+/include/ "../overlays/alp-al00-tugl-v4-cs-a3b2.dtsi"

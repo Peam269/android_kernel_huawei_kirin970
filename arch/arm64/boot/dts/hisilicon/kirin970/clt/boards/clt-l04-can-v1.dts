@@ -8,3 +8,5 @@
 	hisi,modem_id = <0x39039c00>;
 	hisi,product_id = <0x39039c00>;
 };
+
+/include/ "../overlays/clt-l04-can-v1.dtsi"

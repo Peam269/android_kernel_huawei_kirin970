@@ -3146,3 +3146,5 @@
 		modem_pinctrl = "/modem_pinctrl";
 	};
 };
+
+/include/ "../overlays/bla-al00-tugl-v3-9688.dtsi"

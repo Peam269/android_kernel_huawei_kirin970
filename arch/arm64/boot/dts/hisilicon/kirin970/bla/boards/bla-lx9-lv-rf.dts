@@ -2348,3 +2348,5 @@
 		cc_anti_corrosion = "/cc_anti_corrosion";
 	};
 };
+
+/include/ "../overlays/bla-lx9-lv-rf.dtsi"

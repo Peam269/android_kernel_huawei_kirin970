@@ -2073,3 +2073,5 @@
 		phandle = <0x6c5>;
 	};
 };
+
+/include/ "../overlays/col-l29-va.dtsi"

@@ -6272,3 +6272,5 @@
 		phandle = <0x666>;
 	};
 };
+
+/include/ "../overlays/eml-al00-tugl-v1.dtsi"

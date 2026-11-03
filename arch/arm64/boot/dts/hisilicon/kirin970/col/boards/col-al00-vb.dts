@@ -2044,3 +2044,5 @@
 		phandle = <0x6c5>;
 	};
 };
+
+/include/ "../overlays/col-al00-vb.dtsi"
