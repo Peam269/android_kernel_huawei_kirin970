@@ -1,0 +1,42 @@
+/dts-v1/;
+
+/include/ "../variants/rvl-al09a.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x01 0x00 0x01>;
+	hisi,boardname = "RAVEL_AL09B";
+
+	pinmux@fff11800 {
+		gpio212_cfg_func {
+			pinctrl-single,bias-pullup = <0x00 0x01 0x00 0x01>;
+		};
+	};
+
+	pinmux@fc182800 {
+		gpio129_cfg_func {
+			pinctrl-single,bias-pullup = <0x01 0x01 0x00 0x01>;
+		};
+
+		gpio129_cfg_idle {
+			pinctrl-single,bias-pullup = <0x01 0x01 0x00 0x01>;
+		};
+
+		gpio131_cfg_idle {
+			pinctrl-single,bias-pulldown = <0x02 0x02 0x00 0x02>;
+		};
+	};
+
+	deviceboxID@0 {
+		box_num = <0x01>;
+		enable_boxID = <0x01 0x00 0x00 0x00>;
+		gpio_num = <0x01 0x00 0x00 0x00>;
+		pinctrl-0 = <0x1c3 0x1cd>;
+		pinctrl-1 = <0x1d7 0x1e1>;
+	};
+
+	ts_kit {
+		touchscreen@90 {
+			is_need_set_pinctrl = <0x00>;
+		};
+	};
+};

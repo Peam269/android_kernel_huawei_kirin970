@@ -1,0 +1,37 @@
+/dts-v1/;
+
+/include/ "../variants/vce-tl00.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x09 0x08 0x02>;
+	hisi,boardname = "VCE_TL00_VE";
+	hisi,modem_id = <0x39651800>;
+	hisi,product_name = "VCE-TL00";
+
+	pinmux@e896c800 {
+		gpio030_cfg_func {
+			pinctrl-single,bias-pulldown = <0x02 0x02 0x00 0x02>;
+		};
+
+		gpio030_cfg_idle {
+			pinctrl-single,bias-pulldown = <0x02 0x02 0x00 0x02>;
+		};
+	};
+
+	huawei,imx350 {
+		compatible = "huawei,imx350VCE";
+		status = "ok";
+		phandle = <0x6d1>;
+	};
+
+	huawei,ov20880 {
+		compatible = "huawei,ov20880VCE";
+		status = "ok";
+		phandle = <0x6d2>;
+	};
+
+	__symbols__ {
+		huawei_imx350 = "/huawei,imx350";
+		huawei_ov20880 = "/huawei,ov20880";
+	};
+};

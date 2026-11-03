@@ -1,0 +1,65 @@
+/dts-v1/;
+
+/include/ "../variants/clt-al00.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x05 0x02 0x03>;
+	hisi,boardname = "CHARLOTTE_TUGL_V2_POWER";
+	hisi,modem_id = <0x39030800>;
+	hisi,product_id = <0x39030800>;
+
+	sec_pinmux@fff11800 {
+		gpio213_cfg_func {
+			pinctrl-single,pins = <0x710 0x00>;
+			pinctrl-single,bias-pulldown = <0x00 0x02 0x00 0x02>;
+			pinctrl-single,bias-pullup = <0x00 0x01 0x00 0x01>;
+			pinctrl-single,drive-strength = <0x40 0x70>;
+			pinctrl-single,slew-rate = <0x00 0x80>;
+			phandle = <0x664>;
+		};
+
+		gpio213_cfg_idle {
+			pinctrl-single,pins = <0x710 0x00>;
+			pinctrl-single,bias-pulldown = <0x00 0x02 0x00 0x02>;
+			pinctrl-single,bias-pullup = <0x00 0x01 0x00 0x01>;
+			pinctrl-single,drive-strength = <0x40 0x70>;
+			pinctrl-single,slew-rate = <0x00 0x80>;
+			phandle = <0x665>;
+		};
+
+		gpio214_cfg_func {
+			pinctrl-single,pins = <0x714 0x00>;
+			pinctrl-single,bias-pulldown = <0x00 0x02 0x00 0x02>;
+			pinctrl-single,bias-pullup = <0x00 0x01 0x00 0x01>;
+			pinctrl-single,drive-strength = <0x20 0x70>;
+			pinctrl-single,slew-rate = <0x00 0x80>;
+			phandle = <0x666>;
+		};
+
+		gpio214_cfg_idle {
+			pinctrl-single,pins = <0x714 0x00>;
+			pinctrl-single,bias-pulldown = <0x00 0x02 0x00 0x02>;
+			pinctrl-single,bias-pullup = <0x00 0x01 0x00 0x01>;
+			pinctrl-single,drive-strength = <0x20 0x70>;
+			pinctrl-single,slew-rate = <0x00 0x80>;
+			phandle = <0x667>;
+		};
+
+		gpio215_cfg_func {
+			phandle = <0x668>;
+		};
+
+		gpio215_cfg_idle {
+			phandle = <0x669>;
+		};
+	};
+
+	__symbols__ {
+		gpio213_cfg_func = "/sec_pinmux@fff11800/gpio213_cfg_func";
+		gpio213_cfg_idle = "/sec_pinmux@fff11800/gpio213_cfg_idle";
+		gpio214_cfg_func = "/sec_pinmux@fff11800/gpio214_cfg_func";
+		gpio214_cfg_idle = "/sec_pinmux@fff11800/gpio214_cfg_idle";
+		gpio215_cfg_func = "/sec_pinmux@fff11800/gpio215_cfg_func";
+		gpio215_cfg_idle = "/sec_pinmux@fff11800/gpio215_cfg_idle";
+	};
+};

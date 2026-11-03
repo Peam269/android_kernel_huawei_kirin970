@@ -1,0 +1,95 @@
+/dts-v1/;
+
+/include/ "../variants/alp-lx9.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x04 0x01 0x05>;
+	hisi,boardname = "ALPS_LX9_V4_CS_B1";
+	hisi,modem_id = "9", "0";
+	hisi,product_id = "9", "0";
+
+	huawei,lcd_panel {
+		product_id = <0x3e9>;
+	};
+
+	amba {
+		i2c@FDF0D000 {
+			huawei,lm3646@67 {
+				huawei,led-type = <0x00>;
+				huawei,flash-current = <0x00 0x0f 0x00>;
+			};
+
+			huawei,mp3336@27 {
+				huawei,led-type = <0x00>;
+				huawei,flash-current = <0x00 0x12 0x00>;
+			};
+		};
+
+		i2c@FFD6A000 {
+			hi6523_charger_i2c6@6B {
+				fcp_support = <0x00>;
+				scp_support = <0x00>;
+				scp_need_extra_power = <0x00>;
+			};
+
+			fsa9685_i2c6@25 {
+				status = "ok";
+			};
+		};
+	};
+
+	hisi_usb@ff200000 {
+		set_hi_impedance = <0x01>;
+	};
+
+	sensorhub {
+		light {
+			als1 {
+				als_phone_version = <0x66>;
+			};
+
+			als2 {
+				als_phone_version = <0x66>;
+			};
+		};
+
+		gsensor {
+			acc1 {
+				negate_z = <0x01>;
+			};
+
+			acc2 {
+				negate_x = <0x00>;
+				negate_y = <0x01>;
+				negate_z = <0x01>;
+			};
+		};
+
+		gyroscope {
+			gyro1 {
+				axis_map_x = <0x00>;
+				axis_map_y = <0x01>;
+				negate_z = <0x01>;
+				position = <0x05>;
+			};
+
+			gyro2 {
+				position = <0x05>;
+				axis_map_x = <0x00>;
+				axis_map_y = <0x01>;
+				axis_map_z = <0x02>;
+				negate_x = <0x00>;
+				negate_y = <0x01>;
+				negate_z = <0x01>;
+			};
+		};
+	};
+
+	direct_charger {
+		scp_work_on_charger = <0x00>;
+	};
+
+	devcheck {
+		usb_switch = <0x01>;
+	};
+};

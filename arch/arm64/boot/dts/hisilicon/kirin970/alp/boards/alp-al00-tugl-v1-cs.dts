@@ -1,0 +1,35 @@
+/dts-v1/;
+
+/include/ "../variants/alp-al00.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x04 0x01 0x00>;
+	hisi,boardname = "ALPS_TUGL_V1_CS";
+	hisi,modem_id = <0x39001400>;
+	hisi,product_id = <0x39001400>;
+
+	amba {
+		i2c@FFD6A000 {
+			hi6523_charger_i2c6@6B {
+				fcp_support = <0x01>;
+				scp_support = <0x01>;
+			};
+
+			fsa9685_i2c6@25 {
+				status = "disabled";
+			};
+		};
+	};
+
+	hisi_usb@ff200000 {
+		set_hi_impedance = <0x00>;
+	};
+
+	direct_charger {
+		scp_work_on_charger = <0x01>;
+	};
+
+	devcheck {
+		usb_switch = <0x00>;
+	};
+};

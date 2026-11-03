@@ -1,0 +1,10 @@
+/dts-v1/;
+
+/include/ "../variants/clt-lx9.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x05 0x04 0x02>;
+	hisi,boardname = "CHARLOTTE_LX9_VN1";
+	hisi,modem_id = <0x39034400>;
+	hisi,product_id = <0x39034400>;
+};

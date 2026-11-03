@@ -1,0 +1,29 @@
+/include/ "../col-common.dtsi"
+
+/ {
+	hisi,product_name = "COL-L29";
+
+	pinmux@fff11800 {
+		gpio217_cfg_func {
+			pinctrl-single,bias-pulldown = <0x00 0x02 0x00 0x02>;
+			pinctrl-single,bias-pullup = <0x01 0x01 0x00 0x01>;
+		};
+
+		gpio217_cfg_idle {
+			pinctrl-single,bias-pulldown = <0x00 0x02 0x00 0x02>;
+			pinctrl-single,bias-pullup = <0x01 0x01 0x00 0x01>;
+		};
+	};
+
+	hall {
+		status = "ok";
+	};
+
+	modem_pinctrl {
+		pinctrl-num = <0x13 0x13 0x13>;
+	};
+
+	hisi_cust_cfg {
+		ini_file_name = "/vendor/etc/cfg_col_lx9_hisi.ini";
+	};
+};

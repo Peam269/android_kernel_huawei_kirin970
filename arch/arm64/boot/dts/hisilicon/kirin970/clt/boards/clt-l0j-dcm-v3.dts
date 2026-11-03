@@ -1,0 +1,10 @@
+/dts-v1/;
+
+/include/ "../variants/clt-l0j.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x05 0x03 0x08>;
+	hisi,boardname = "CHARLOTTE_DCM_V3";
+	hisi,modem_id = <0x3903b400>;
+	hisi,product_id = <0x3903b400>;
+};

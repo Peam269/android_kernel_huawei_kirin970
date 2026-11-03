@@ -1,0 +1,9 @@
+/dts-v1/;
+
+/include/ "../variants/bkl-l04.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x09 0x02 0x00>;
+	hisi,boardname = "BKL_L04_VN2";
+	hisi,modem_id = <0x39620400>;
+};

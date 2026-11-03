@@ -1,0 +1,6283 @@
+/dts-v1/;
+
+/include/ "../variants/neo-al00.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x04 0x08 0x09>;
+	hisi,boardname = "NEO_TUGL_V4_FP";
+	hisi,modem_id = <0x39041000>;
+	hisi,product_id = <0x39041000>;
+
+	reserved-memory {
+		phandle = <0x254>;
+
+		camera-mem {
+			phandle = <0x255>;
+		};
+
+		iommu_pgtable {
+			phandle = <0x256>;
+		};
+
+		fastboot-cma-mem {
+			phandle = <0x1a9>;
+		};
+
+		pstore-mem {
+			phandle = <0x211>;
+		};
+
+		voiceid {
+			phandle = <0x257>;
+		};
+
+		dtb {
+			phandle = <0x258>;
+		};
+
+		normal-ramdisk {
+			phandle = <0x259>;
+		};
+
+		recovery-ramdisk {
+			phandle = <0x25a>;
+		};
+
+		xmode-data {
+			phandle = <0x25b>;
+		};
+
+		mperf {
+			phandle = <0x232>;
+		};
+
+		mdmlog {
+			phandle = <0x233>;
+		};
+	};
+
+	fastboot_pmic {
+		phandle = <0x25c>;
+	};
+
+	fastboot_pmic_mntn {
+		phandle = <0x25d>;
+	};
+
+	fastboot_core {
+		phandle = <0x25e>;
+	};
+
+	slimbusmisc@0xe8050000 {
+		phandle = <0x25f>;
+	};
+
+	codecssi@0xe82b9000 {
+		phandle = <0x260>;
+	};
+
+	huawei,lcd_panel {
+		phandle = <0x261>;
+	};
+
+	cpus {
+		idle-states {
+			cpu-nap-0 {
+				phandle = <0x262>;
+			};
+		};
+	};
+
+	pinmux@e896c000 {
+		gpio001_pmx_func {
+			phandle = <0x263>;
+		};
+
+		gpio001_pmx_idle {
+			phandle = <0x264>;
+		};
+
+		gpio003_pmx_func {
+			phandle = <0x265>;
+		};
+
+		gpio003_pmx_idle {
+			phandle = <0x266>;
+		};
+
+		gpio004_pmx_func {
+			phandle = <0x267>;
+		};
+
+		gpio004_pmx_idle {
+			phandle = <0x268>;
+		};
+
+		gpio005_pmx_func {
+			phandle = <0x269>;
+		};
+
+		gpio005_pmx_idle {
+			phandle = <0x26a>;
+		};
+
+		gpio006_pmx_func {
+			phandle = <0x26b>;
+		};
+
+		gpio006_pmx_idle {
+			phandle = <0x26c>;
+		};
+
+		gpio007_pmx_func {
+			phandle = <0x26d>;
+		};
+
+		gpio007_pmx_idle {
+			phandle = <0x26e>;
+		};
+
+		gpio008_pmx_func {
+			phandle = <0x26f>;
+		};
+
+		gpio008_pmx_idle {
+			phandle = <0x270>;
+		};
+
+		gpio009_pmx_func {
+			phandle = <0x271>;
+		};
+
+		gpio009_pmx_idle {
+			phandle = <0x272>;
+		};
+
+		gpio010_pmx_func {
+			phandle = <0x273>;
+		};
+
+		gpio010_pmx_idle {
+			phandle = <0x274>;
+		};
+
+		gpio011_pmx_func {
+			phandle = <0x275>;
+		};
+
+		gpio011_pmx_idle {
+			phandle = <0x276>;
+		};
+
+		gpio012_pmx_func {
+			phandle = <0x277>;
+		};
+
+		gpio012_pmx_idle {
+			phandle = <0x278>;
+		};
+
+		gpio013_pmx_func {
+			phandle = <0x279>;
+		};
+
+		gpio013_pmx_idle {
+			phandle = <0x27a>;
+		};
+
+		gpio014_pmx_func {
+			phandle = <0x27b>;
+		};
+
+		gpio014_pmx_idle {
+			phandle = <0x27c>;
+		};
+
+		gpio015_pmx_func {
+			phandle = <0x27d>;
+		};
+
+		gpio015_pmx_idle {
+			phandle = <0x27e>;
+		};
+
+		gpio016_pmx_func {
+			phandle = <0x27f>;
+		};
+
+		gpio016_pmx_idle {
+			phandle = <0x280>;
+		};
+
+		gpio017_pmx_func {
+			phandle = <0x281>;
+		};
+
+		gpio017_pmx_idle {
+			phandle = <0x282>;
+		};
+
+		gpio018_pmx_func {
+			phandle = <0x283>;
+		};
+
+		gpio018_pmx_idle {
+			phandle = <0x284>;
+		};
+
+		gpio019_pmx_func {
+			phandle = <0x285>;
+		};
+
+		gpio019_pmx_idle {
+			phandle = <0x286>;
+		};
+
+		gpio020_pmx_func {
+			phandle = <0x287>;
+		};
+
+		gpio020_pmx_idle {
+			phandle = <0x288>;
+		};
+
+		gpio021_pmx_func {
+			phandle = <0x289>;
+		};
+
+		gpio021_pmx_idle {
+			phandle = <0x28a>;
+		};
+
+		gpio022_pmx_func {
+			phandle = <0x28b>;
+		};
+
+		gpio022_pmx_idle {
+			phandle = <0x28c>;
+		};
+
+		gpio023_pmx_func {
+			phandle = <0x28d>;
+		};
+
+		gpio023_pmx_idle {
+			phandle = <0x28e>;
+		};
+
+		gpio024_pmx_func {
+			phandle = <0x28f>;
+		};
+
+		gpio024_pmx_idle {
+			phandle = <0x290>;
+		};
+
+		gpio025_pmx_func {
+			phandle = <0x291>;
+		};
+
+		gpio025_pmx_idle {
+			phandle = <0x292>;
+		};
+
+		gpio026_pmx_func {
+			phandle = <0x293>;
+		};
+
+		gpio026_pmx_idle {
+			phandle = <0x294>;
+		};
+
+		gpio027_pmx_func {
+			phandle = <0x295>;
+		};
+
+		gpio027_pmx_idle {
+			phandle = <0x296>;
+		};
+
+		gpio029_pmx_func {
+			phandle = <0x250>;
+		};
+
+		gpio029_pmx_idle {
+			phandle = <0x252>;
+		};
+
+		gpio030_pmx_func {
+			phandle = <0x297>;
+		};
+
+		gpio030_pmx_idle {
+			pinctrl-single,pins = <0x728 0x00>;
+			phandle = <0x298>;
+		};
+
+		gpio031_pmx_func {
+			phandle = <0x299>;
+		};
+
+		gpio031_pmx_idle {
+			phandle = <0x29a>;
+		};
+
+		gpio032_pmx_func {
+			phandle = <0x29b>;
+		};
+
+		gpio032_pmx_idle {
+			phandle = <0x29c>;
+		};
+
+		gpio033_pmx_func {
+			phandle = <0x29d>;
+		};
+
+		gpio033_pmx_idle {
+			phandle = <0x29e>;
+		};
+
+		gpio034_pmx_func {
+			phandle = <0x24c>;
+		};
+
+		gpio034_pmx_idle {
+			phandle = <0x24e>;
+		};
+
+		gpio035_pmx_func {
+			phandle = <0x29f>;
+		};
+
+		gpio035_pmx_idle {
+			phandle = <0x2a0>;
+		};
+
+		gpio036_pmx_func {
+			phandle = <0x2a1>;
+		};
+
+		gpio036_pmx_idle {
+			phandle = <0x2a2>;
+		};
+
+		gpio037_pmx_func {
+			phandle = <0x2a3>;
+		};
+
+		gpio037_pmx_idle {
+			phandle = <0x2a4>;
+		};
+
+		gpio038_pmx_func {
+			phandle = <0x2a5>;
+		};
+
+		gpio038_pmx_idle {
+			phandle = <0x2a6>;
+		};
+
+		gpio039_pmx_func {
+			phandle = <0x2a7>;
+		};
+
+		gpio039_pmx_idle {
+			phandle = <0x2a8>;
+		};
+
+		gpio040_pmx_func {
+			phandle = <0x2a9>;
+		};
+
+		gpio040_pmx_idle {
+			phandle = <0x2aa>;
+		};
+
+		gpio041_pmx_func {
+			phandle = <0x2ab>;
+		};
+
+		gpio041_pmx_idle {
+			phandle = <0x2ac>;
+		};
+
+		gpio042_pmx_func {
+			phandle = <0x2ad>;
+		};
+
+		gpio042_pmx_idle {
+			phandle = <0x2ae>;
+		};
+
+		gpio043_pmx_func {
+			phandle = <0x2af>;
+		};
+
+		gpio043_pmx_idle {
+			phandle = <0x2b0>;
+		};
+
+		gpio044_pmx_func {
+			phandle = <0x2b1>;
+		};
+
+		gpio044_pmx_idle {
+			phandle = <0x2b2>;
+		};
+
+		gpio045_pmx_func {
+			phandle = <0x2b3>;
+		};
+
+		gpio045_pmx_idle {
+			phandle = <0x2b4>;
+		};
+
+		gpio046_pmx_func {
+			phandle = <0x2b5>;
+		};
+
+		gpio046_pmx_idle {
+			phandle = <0x2b6>;
+		};
+
+		gpio047_pmx_func {
+			phandle = <0x2b7>;
+		};
+
+		gpio047_pmx_idle {
+			phandle = <0x2b8>;
+		};
+
+		gpio049_pmx_func {
+			pinctrl-single,pins = <0x88 0x00>;
+			phandle = <0x2b9>;
+		};
+
+		gpio049_pmx_idle {
+			pinctrl-single,pins = <0x88 0x00>;
+			phandle = <0x2ba>;
+		};
+
+		gpio050_pmx_func {
+			phandle = <0x2bb>;
+		};
+
+		gpio050_pmx_idle {
+			phandle = <0x2bc>;
+		};
+
+		gpio051_pmx_func {
+			phandle = <0x2bd>;
+		};
+
+		gpio051_pmx_idle {
+			phandle = <0x2be>;
+		};
+
+		gpio054_pmx_func {
+			phandle = <0x2bf>;
+		};
+
+		gpio054_pmx_idle {
+			phandle = <0x2c0>;
+		};
+
+		gpio055_pmx_func {
+			phandle = <0x2c1>;
+		};
+
+		gpio055_pmx_idle {
+			phandle = <0x2c2>;
+		};
+
+		gpio056_pmx_func {
+			phandle = <0x2c3>;
+		};
+
+		gpio056_pmx_idle {
+			phandle = <0x2c4>;
+		};
+
+		gpio057_pmx_func {
+			phandle = <0x2c5>;
+		};
+
+		gpio057_pmx_idle {
+			phandle = <0x2c6>;
+		};
+
+		gpio059_pmx_func {
+			phandle = <0x2c7>;
+		};
+
+		gpio059_pmx_idle {
+			phandle = <0x2c8>;
+		};
+
+		gpio060_pmx_func {
+			phandle = <0x2c9>;
+		};
+
+		gpio060_pmx_idle {
+			phandle = <0x2ca>;
+		};
+
+		gpio061_pmx_func {
+			phandle = <0x2cb>;
+		};
+
+		gpio061_pmx_idle {
+			phandle = <0x2cc>;
+		};
+	};
+
+	pinmux@fff11000 {
+		gpio147_pmx_func {
+			phandle = <0x2cd>;
+		};
+
+		gpio147_pmx_idle {
+			phandle = <0x2ce>;
+		};
+
+		gpio148_pmx_func {
+			pinctrl-single,pins = <0xa8 0x00>;
+			phandle = <0x2cf>;
+		};
+
+		gpio148_pmx_idle {
+			phandle = <0x2d0>;
+		};
+
+		gpio150_pmx_func {
+			pinctrl-single,pins = <0xb0 0x00>;
+			phandle = <0x2d1>;
+		};
+
+		gpio150_pmx_idle {
+			pinctrl-single,pins = <0xb0 0x00>;
+			phandle = <0x2d2>;
+		};
+
+		gpio151_pmx_func {
+			pinctrl-single,pins = <0xb4 0x00>;
+			phandle = <0x2d3>;
+		};
+
+		gpio151_pmx_idle {
+			pinctrl-single,pins = <0xb4 0x00>;
+			phandle = <0x2d4>;
+		};
+
+		gpio178_pmx_func {
+			phandle = <0x2d5>;
+		};
+
+		gpio178_pmx_idle {
+			phandle = <0x2d6>;
+		};
+
+		gpio179_pmx_func {
+			phandle = <0x2d7>;
+		};
+
+		gpio179_pmx_idle {
+			phandle = <0x2d8>;
+		};
+
+		gpio180_pmx_func {
+			phandle = <0x2d9>;
+		};
+
+		gpio180_pmx_idle {
+			phandle = <0x2da>;
+		};
+
+		gpio181_pmx_func {
+			phandle = <0x2db>;
+		};
+
+		gpio181_pmx_idle {
+			phandle = <0x2dc>;
+		};
+
+		gpio182_pmx_func {
+			phandle = <0x2dd>;
+		};
+
+		gpio182_pmx_idle {
+			phandle = <0x2de>;
+		};
+
+		gpio183_pmx_func {
+			phandle = <0x2df>;
+		};
+
+		gpio183_pmx_idle {
+			phandle = <0x2e0>;
+		};
+
+		gpio184_pmx_func {
+			phandle = <0x2e1>;
+		};
+
+		gpio184_pmx_idle {
+			phandle = <0x2e2>;
+		};
+
+		gpio185_pmx_func {
+			phandle = <0x2e3>;
+		};
+
+		gpio185_pmx_idle {
+			phandle = <0x2e4>;
+		};
+
+		gpio186_pmx_func {
+			phandle = <0x2e5>;
+		};
+
+		gpio186_pmx_idle {
+			phandle = <0x2e6>;
+		};
+
+		gpio187_pmx_func {
+			phandle = <0x2e7>;
+		};
+
+		gpio187_pmx_idle {
+			phandle = <0x2e8>;
+		};
+
+		gpio188_pmx_func {
+			phandle = <0x2e9>;
+		};
+
+		gpio188_pmx_idle {
+			phandle = <0x2ea>;
+		};
+
+		gpio189_pmx_func {
+			phandle = <0x2eb>;
+		};
+
+		gpio189_pmx_idle {
+			phandle = <0x2ec>;
+		};
+
+		gpio190_pmx_func {
+			phandle = <0x2ed>;
+		};
+
+		gpio190_pmx_idle {
+			phandle = <0x2ee>;
+		};
+
+		gpio191_pmx_func {
+			phandle = <0x2ef>;
+		};
+
+		gpio191_pmx_idle {
+			phandle = <0x2f0>;
+		};
+
+		gpio194_pmx_func {
+			phandle = <0x2f1>;
+		};
+
+		gpio194_pmx_idle {
+			phandle = <0x2f2>;
+		};
+
+		gpio195_pmx_func {
+			phandle = <0x2f3>;
+		};
+
+		gpio195_pmx_idle {
+			phandle = <0x2f4>;
+		};
+
+		gpio196_pmx_func {
+			phandle = <0x2f5>;
+		};
+
+		gpio196_pmx_idle {
+			phandle = <0x2f6>;
+		};
+
+		gpio198_pmx_func {
+			phandle = <0x2f7>;
+		};
+
+		gpio198_pmx_idle {
+			phandle = <0x2f8>;
+		};
+
+		gpio199_pmx_func {
+			phandle = <0x2f9>;
+		};
+
+		gpio199_pmx_idle {
+			phandle = <0x2fa>;
+		};
+
+		gpio200_pmx_func {
+			phandle = <0xa5>;
+		};
+
+		gpio200_pmx_idle {
+			phandle = <0xa7>;
+		};
+
+		gpio201_pmx_func {
+			phandle = <0x2fb>;
+		};
+
+		gpio201_pmx_idle {
+			phandle = <0x2fc>;
+		};
+
+		gpio202_pmx_func {
+			phandle = <0x2fd>;
+		};
+
+		gpio202_pmx_idle {
+			phandle = <0x2fe>;
+		};
+
+		gpio204_pmx_func {
+			phandle = <0x2ff>;
+		};
+
+		gpio204_pmx_idle {
+			phandle = <0x300>;
+		};
+
+		gpio205_pmx_func {
+			phandle = <0x301>;
+		};
+
+		gpio205_pmx_idle {
+			phandle = <0x302>;
+		};
+
+		gpio206_pmx_func {
+			phandle = <0x303>;
+		};
+
+		gpio206_pmx_idle {
+			phandle = <0x304>;
+		};
+
+		gpio207_pmx_func {
+			phandle = <0x305>;
+		};
+
+		gpio207_pmx_idle {
+			phandle = <0x306>;
+		};
+
+		gpio208_pmx_func {
+			phandle = <0x239>;
+		};
+
+		gpio208_pmx_idle {
+			phandle = <0x23b>;
+		};
+
+		gpio209_pmx_func {
+			phandle = <0x307>;
+		};
+
+		gpio209_pmx_idle {
+			phandle = <0x308>;
+		};
+
+		gpio210_pmx_func {
+			phandle = <0x309>;
+		};
+
+		gpio210_pmx_idle {
+			phandle = <0x30a>;
+		};
+
+		gpio211_pmx_func {
+			phandle = <0x30b>;
+		};
+
+		gpio211_pmx_idle {
+			phandle = <0x30c>;
+		};
+
+		gpio212_pmx_func {
+			phandle = <0x30d>;
+		};
+
+		gpio212_pmx_idle {
+			phandle = <0x30e>;
+		};
+
+		gpio216_pmx_func {
+			phandle = <0x30f>;
+		};
+
+		gpio216_pmx_idle {
+			phandle = <0x310>;
+		};
+
+		gpio217_pmx_func {
+			phandle = <0x311>;
+		};
+
+		gpio217_pmx_idle {
+			phandle = <0x312>;
+		};
+
+		gpio218_pmx_func {
+			phandle = <0x313>;
+		};
+
+		gpio218_pmx_idle {
+			phandle = <0x314>;
+		};
+
+		gpio219_pmx_func {
+			phandle = <0x315>;
+		};
+
+		gpio219_pmx_idle {
+			phandle = <0x316>;
+		};
+
+		gpio220_pmx_func {
+			phandle = <0x317>;
+		};
+
+		gpio220_pmx_idle {
+			phandle = <0x318>;
+		};
+
+		gpio221_pmx_func {
+			phandle = <0x319>;
+		};
+
+		gpio221_pmx_idle {
+			phandle = <0x31a>;
+		};
+
+		gpio222_pmx_func {
+			phandle = <0x31b>;
+		};
+
+		gpio222_pmx_idle {
+			phandle = <0x31c>;
+		};
+
+		gpio223_pmx_func {
+			phandle = <0x31d>;
+		};
+
+		gpio223_pmx_idle {
+			phandle = <0x31e>;
+		};
+
+		gpio225_pmx_func {
+			phandle = <0x31f>;
+		};
+
+		gpio225_pmx_idle {
+			phandle = <0x320>;
+		};
+
+		gpio226_pmx_func {
+			phandle = <0x321>;
+		};
+
+		gpio226_pmx_idle {
+			phandle = <0x322>;
+		};
+
+		gpio227_pmx_func {
+			phandle = <0x323>;
+		};
+
+		gpio227_pmx_idle {
+			phandle = <0x324>;
+		};
+
+		gpio228_pmx_func {
+			phandle = <0x325>;
+		};
+
+		gpio228_pmx_idle {
+			phandle = <0x326>;
+		};
+
+		gpio229_pmx_func {
+			phandle = <0x327>;
+		};
+
+		gpio229_pmx_idle {
+			phandle = <0x328>;
+		};
+
+		gpio230_pmx_func {
+			phandle = <0x329>;
+		};
+
+		gpio230_pmx_idle {
+			phandle = <0x32a>;
+		};
+
+		gpio231_pmx_func {
+			phandle = <0x32b>;
+		};
+
+		gpio231_pmx_idle {
+			phandle = <0x32c>;
+		};
+	};
+
+	pinmux@e896c800 {
+		phandle = <0x32d>;
+
+		gpio001_cfg_func {
+			phandle = <0x32e>;
+		};
+
+		gpio001_cfg_idle {
+			phandle = <0x32f>;
+		};
+
+		gpio003_cfg_func {
+			phandle = <0x330>;
+		};
+
+		gpio003_cfg_idle {
+			phandle = <0x331>;
+		};
+
+		gpio004_cfg_func {
+			phandle = <0x332>;
+		};
+
+		gpio004_cfg_idle {
+			phandle = <0x333>;
+		};
+
+		gpio005_cfg_func {
+			phandle = <0x334>;
+		};
+
+		gpio005_cfg_idle {
+			phandle = <0x335>;
+		};
+
+		gpio006_cfg_func {
+			phandle = <0x336>;
+		};
+
+		gpio006_cfg_idle {
+			phandle = <0x337>;
+		};
+
+		gpio007_cfg_func {
+			phandle = <0x338>;
+		};
+
+		gpio007_cfg_idle {
+			phandle = <0x339>;
+		};
+
+		gpio008_cfg_func {
+			phandle = <0x33a>;
+		};
+
+		gpio008_cfg_idle {
+			phandle = <0x33b>;
+		};
+
+		gpio009_cfg_func {
+			phandle = <0x33c>;
+		};
+
+		gpio009_cfg_idle {
+			phandle = <0x33d>;
+		};
+
+		gpio010_cfg_func {
+			phandle = <0x33e>;
+		};
+
+		gpio010_cfg_idle {
+			phandle = <0x33f>;
+		};
+
+		gpio011_cfg_func {
+			phandle = <0x340>;
+		};
+
+		gpio011_cfg_idle {
+			phandle = <0x341>;
+		};
+
+		gpio012_cfg_func {
+			phandle = <0x342>;
+		};
+
+		gpio012_cfg_idle {
+			phandle = <0x343>;
+		};
+
+		gpio013_cfg_func {
+			phandle = <0x344>;
+		};
+
+		gpio013_cfg_idle {
+			phandle = <0x345>;
+		};
+
+		gpio014_cfg_func {
+			phandle = <0x346>;
+		};
+
+		gpio014_cfg_idle {
+			phandle = <0x347>;
+		};
+
+		gpio015_cfg_func {
+			phandle = <0x348>;
+		};
+
+		gpio015_cfg_idle {
+			phandle = <0x349>;
+		};
+
+		gpio016_cfg_func {
+			phandle = <0x34a>;
+		};
+
+		gpio016_cfg_idle {
+			phandle = <0x34b>;
+		};
+
+		gpio017_cfg_func {
+			phandle = <0x34c>;
+		};
+
+		gpio017_cfg_idle {
+			phandle = <0x34d>;
+		};
+
+		gpio018_cfg_func {
+			phandle = <0x34e>;
+		};
+
+		gpio018_cfg_idle {
+			phandle = <0x34f>;
+		};
+
+		gpio019_cfg_func {
+			phandle = <0x350>;
+		};
+
+		gpio019_cfg_idle {
+			phandle = <0x351>;
+		};
+
+		gpio020_cfg_func {
+			phandle = <0x352>;
+		};
+
+		gpio020_cfg_idle {
+			phandle = <0x353>;
+		};
+
+		gpio021_cfg_func {
+			phandle = <0x354>;
+		};
+
+		gpio021_cfg_idle {
+			phandle = <0x355>;
+		};
+
+		gpio022_cfg_func {
+			phandle = <0x356>;
+		};
+
+		gpio022_cfg_idle {
+			phandle = <0x357>;
+		};
+
+		gpio023_cfg_func {
+			phandle = <0x358>;
+		};
+
+		gpio023_cfg_idle {
+			phandle = <0x359>;
+		};
+
+		gpio024_cfg_func {
+			phandle = <0x35a>;
+		};
+
+		gpio024_cfg_idle {
+			phandle = <0x35b>;
+		};
+
+		gpio025_cfg_func {
+			phandle = <0x35c>;
+		};
+
+		gpio025_cfg_idle {
+			phandle = <0x35d>;
+		};
+
+		gpio026_cfg_func {
+			phandle = <0x35e>;
+		};
+
+		gpio026_cfg_idle {
+			phandle = <0x35f>;
+		};
+
+		gpio027_cfg_func {
+			phandle = <0x360>;
+		};
+
+		gpio027_cfg_idle {
+			phandle = <0x361>;
+		};
+
+		gpio029_cfg_func {
+			phandle = <0x251>;
+		};
+
+		gpio029_cfg_idle {
+			phandle = <0x253>;
+		};
+
+		gpio030_cfg_func {
+			phandle = <0x362>;
+		};
+
+		gpio030_cfg_idle {
+			phandle = <0x363>;
+		};
+
+		gpio031_cfg_func {
+			phandle = <0x364>;
+		};
+
+		gpio031_cfg_idle {
+			phandle = <0x365>;
+		};
+
+		gpio032_cfg_func {
+			phandle = <0x366>;
+		};
+
+		gpio032_cfg_idle {
+			phandle = <0x367>;
+		};
+
+		gpio033_cfg_func {
+			phandle = <0x368>;
+		};
+
+		gpio033_cfg_idle {
+			phandle = <0x369>;
+		};
+
+		gpio034_cfg_func {
+			phandle = <0x24d>;
+		};
+
+		gpio034_cfg_idle {
+			phandle = <0x24f>;
+		};
+
+		gpio035_cfg_func {
+			phandle = <0x36a>;
+		};
+
+		gpio035_cfg_idle {
+			phandle = <0x36b>;
+		};
+
+		gpio036_cfg_func {
+			phandle = <0x36c>;
+		};
+
+		gpio036_cfg_idle {
+			phandle = <0x36d>;
+		};
+
+		gpio037_cfg_func {
+			phandle = <0x36e>;
+		};
+
+		gpio037_cfg_idle {
+			phandle = <0x36f>;
+		};
+
+		gpio038_cfg_func {
+			phandle = <0x370>;
+		};
+
+		gpio038_cfg_idle {
+			phandle = <0x371>;
+		};
+
+		gpio039_cfg_func {
+			phandle = <0x372>;
+		};
+
+		gpio039_cfg_idle {
+			phandle = <0x373>;
+		};
+
+		gpio040_cfg_func {
+			phandle = <0x374>;
+		};
+
+		gpio040_cfg_idle {
+			phandle = <0x375>;
+		};
+
+		gpio041_cfg_func {
+			phandle = <0x376>;
+		};
+
+		gpio041_cfg_idle {
+			phandle = <0x377>;
+		};
+
+		gpio042_cfg_func {
+			phandle = <0x378>;
+		};
+
+		gpio042_cfg_idle {
+			phandle = <0x379>;
+		};
+
+		gpio043_cfg_func {
+			phandle = <0x37a>;
+		};
+
+		gpio043_cfg_idle {
+			phandle = <0x37b>;
+		};
+
+		gpio044_cfg_func {
+			phandle = <0x37c>;
+		};
+
+		gpio044_cfg_idle {
+			phandle = <0x37d>;
+		};
+
+		gpio045_cfg_func {
+			phandle = <0x37e>;
+		};
+
+		gpio045_cfg_idle {
+			phandle = <0x37f>;
+		};
+
+		gpio046_cfg_func {
+			phandle = <0x380>;
+		};
+
+		gpio046_cfg_idle {
+			phandle = <0x381>;
+		};
+
+		gpio047_cfg_func {
+			phandle = <0x382>;
+		};
+
+		gpio047_cfg_idle {
+			phandle = <0x383>;
+		};
+
+		gpio049_cfg_func {
+			phandle = <0x384>;
+		};
+
+		gpio049_cfg_idle {
+			phandle = <0x385>;
+		};
+
+		gpio050_cfg_func {
+			phandle = <0x386>;
+		};
+
+		gpio050_cfg_idle {
+			phandle = <0x387>;
+		};
+
+		gpio051_cfg_func {
+			phandle = <0x388>;
+		};
+
+		gpio051_cfg_idle {
+			phandle = <0x389>;
+		};
+
+		gpio054_cfg_func {
+			phandle = <0x38a>;
+		};
+
+		gpio054_cfg_idle {
+			phandle = <0x38b>;
+		};
+
+		gpio055_cfg_func {
+			phandle = <0x38c>;
+		};
+
+		gpio055_cfg_idle {
+			phandle = <0x38d>;
+		};
+
+		gpio056_cfg_func {
+			phandle = <0x38e>;
+		};
+
+		gpio056_cfg_idle {
+			phandle = <0x38f>;
+		};
+
+		gpio057_cfg_func {
+			phandle = <0x390>;
+		};
+
+		gpio057_cfg_idle {
+			phandle = <0x391>;
+		};
+
+		gpio059_cfg_func {
+			phandle = <0x392>;
+		};
+
+		gpio059_cfg_idle {
+			phandle = <0x393>;
+		};
+
+		gpio060_cfg_func {
+			phandle = <0x394>;
+		};
+
+		gpio060_cfg_idle {
+			phandle = <0x395>;
+		};
+
+		gpio061_cfg_func {
+			phandle = <0x396>;
+		};
+
+		gpio061_cfg_idle {
+			pinctrl-single,bias-pulldown = <0x00 0x02 0x00 0x02>;
+			phandle = <0x397>;
+		};
+	};
+
+	pinmux@e896c880 {
+		phandle = <0x398>;
+	};
+
+	pinmux@e896c848 {
+		phandle = <0x399>;
+	};
+
+	pinmux@fff11800 {
+		phandle = <0x39a>;
+
+		gpio147_cfg_func {
+			phandle = <0x39b>;
+		};
+
+		gpio147_cfg_idle {
+			phandle = <0x39c>;
+		};
+
+		gpio148_cfg_func {
+			pinctrl-single,drive-strength = <0x00 0x70>;
+			pinctrl-single,slew-rate = <0x00 0x80>;
+			phandle = <0x39d>;
+		};
+
+		gpio148_cfg_idle {
+			pinctrl-single,bias-pullup = <0x01 0x01 0x00 0x01>;
+			pinctrl-single,drive-strength = <0x00 0x70>;
+			pinctrl-single,slew-rate = <0x00 0x80>;
+			phandle = <0x39e>;
+		};
+
+		gpio150_cfg_func {
+			pinctrl-single,bias-pullup = <0x01 0x01 0x00 0x01>;
+			phandle = <0x39f>;
+		};
+
+		gpio150_cfg_idle {
+			pinctrl-single,bias-pullup = <0x01 0x01 0x00 0x01>;
+			phandle = <0x3a0>;
+		};
+
+		gpio151_cfg_func {
+			pinctrl-single,bias-pullup = <0x01 0x01 0x00 0x01>;
+			phandle = <0x3a1>;
+		};
+
+		gpio151_cfg_idle {
+			pinctrl-single,bias-pullup = <0x01 0x01 0x00 0x01>;
+			phandle = <0x3a2>;
+		};
+
+		gpio177_cfg_func {
+			phandle = <0x3a3>;
+		};
+
+		gpio177_cfg_idle {
+			phandle = <0x3a4>;
+		};
+
+		gpio178_cfg_func {
+			phandle = <0x3a5>;
+		};
+
+		gpio178_cfg_idle {
+			phandle = <0x3a6>;
+		};
+
+		gpio179_cfg_func {
+			phandle = <0x3a7>;
+		};
+
+		gpio179_cfg_idle {
+			phandle = <0x3a8>;
+		};
+
+		gpio180_cfg_func {
+			phandle = <0x3a9>;
+		};
+
+		gpio180_cfg_idle {
+			phandle = <0x3aa>;
+		};
+
+		gpio181_cfg_func {
+			phandle = <0x3ab>;
+		};
+
+		gpio181_cfg_idle {
+			phandle = <0x3ac>;
+		};
+
+		gpio182_cfg_func {
+			phandle = <0x3ad>;
+		};
+
+		gpio182_cfg_idle {
+			phandle = <0x3ae>;
+		};
+
+		gpio183_cfg_func {
+			phandle = <0x3af>;
+		};
+
+		gpio183_cfg_idle {
+			phandle = <0x3b0>;
+		};
+
+		gpio184_cfg_func {
+			phandle = <0x3b1>;
+		};
+
+		gpio184_cfg_idle {
+			phandle = <0x3b2>;
+		};
+
+		gpio185_cfg_func {
+			pinctrl-single,bias-pullup = <0x00 0x01 0x00 0x01>;
+			phandle = <0x3b3>;
+		};
+
+		gpio185_cfg_idle {
+			pinctrl-single,bias-pullup = <0x00 0x01 0x00 0x01>;
+			phandle = <0x3b4>;
+		};
+
+		gpio186_cfg_func {
+			phandle = <0x3b5>;
+		};
+
+		gpio186_cfg_idle {
+			phandle = <0x3b6>;
+		};
+
+		gpio187_cfg_func {
+			phandle = <0x3b7>;
+		};
+
+		gpio187_cfg_idle {
+			phandle = <0x3b8>;
+		};
+
+		gpio188_cfg_func {
+			phandle = <0x3b9>;
+		};
+
+		gpio188_cfg_idle {
+			phandle = <0x3ba>;
+		};
+
+		gpio189_cfg_func {
+			phandle = <0x3bb>;
+		};
+
+		gpio189_cfg_idle {
+			phandle = <0x3bc>;
+		};
+
+		gpio190_cfg_func {
+			phandle = <0x3bd>;
+		};
+
+		gpio190_cfg_idle {
+			phandle = <0x3be>;
+		};
+
+		gpio191_cfg_func {
+			phandle = <0x3bf>;
+		};
+
+		gpio191_cfg_idle {
+			phandle = <0x3c0>;
+		};
+
+		gpio194_cfg_func {
+			phandle = <0x3c1>;
+		};
+
+		gpio194_cfg_idle {
+			phandle = <0x3c2>;
+		};
+
+		gpio195_cfg_func {
+			phandle = <0x3c3>;
+		};
+
+		gpio195_cfg_idle {
+			phandle = <0x3c4>;
+		};
+
+		gpio196_cfg_func {
+			phandle = <0x3c5>;
+		};
+
+		gpio196_cfg_idle {
+			phandle = <0x3c6>;
+		};
+
+		gpio198_cfg_func {
+			phandle = <0x3c7>;
+		};
+
+		gpio198_cfg_idle {
+			phandle = <0x3c8>;
+		};
+
+		gpio199_cfg_func {
+			phandle = <0x3c9>;
+		};
+
+		gpio199_cfg_idle {
+			phandle = <0x3ca>;
+		};
+
+		gpio200_cfg_func {
+			phandle = <0xa6>;
+		};
+
+		gpio200_cfg_idle {
+			phandle = <0xa8>;
+		};
+
+		gpio202_cfg_func {
+			pinctrl-single,bias-pulldown = <0x00 0x02 0x00 0x02>;
+		};
+
+		gpio202_cfg_idle {
+			pinctrl-single,bias-pulldown = <0x00 0x02 0x00 0x02>;
+		};
+
+		gpio208_cfg_func {
+			phandle = <0x23a>;
+		};
+
+		gpio208_cfg_idle {
+			phandle = <0x23c>;
+		};
+
+		gpio211_cfg_func {
+			pinctrl-single,bias-pulldown = <0x00 0x02 0x00 0x02>;
+		};
+
+		gpio211_cfg_idle {
+			pinctrl-single,bias-pulldown = <0x00 0x02 0x00 0x02>;
+		};
+
+		gpio217_cfg_func {
+			pinctrl-single,bias-pullup = <0x00 0x01 0x00 0x01>;
+		};
+
+		gpio217_cfg_idle {
+			pinctrl-single,bias-pullup = <0x00 0x01 0x00 0x01>;
+		};
+
+		gpio228_cfg_func {
+			pinctrl-single,bias-pullup = <0x01 0x01 0x00 0x01>;
+		};
+
+		gpio228_cfg_idle {
+			pinctrl-single,bias-pullup = <0x01 0x01 0x00 0x01>;
+		};
+	};
+
+	pinmux@fc182000 {
+		gpio128_pmx_func {
+			phandle = <0x1c8>;
+		};
+
+		gpio128_pmx_idle {
+			phandle = <0x1dc>;
+		};
+
+		gpio129_pmx_func {
+			phandle = <0x1c9>;
+		};
+
+		gpio129_pmx_idle {
+			phandle = <0x1dd>;
+		};
+
+		gpio130_pmx_func {
+			phandle = <0x1ca>;
+		};
+
+		gpio130_pmx_idle {
+			phandle = <0x1de>;
+		};
+
+		gpio131_pmx_func {
+			phandle = <0x1cb>;
+		};
+
+		gpio131_pmx_idle {
+			phandle = <0x1df>;
+		};
+
+		gpio132_pmx_func {
+			phandle = <0x1cc>;
+		};
+
+		gpio132_pmx_idle {
+			phandle = <0x1e0>;
+		};
+
+		gpio133_pmx_func {
+			phandle = <0x1cd>;
+		};
+
+		gpio133_pmx_idle {
+			phandle = <0x1e1>;
+		};
+
+		gpio134_pmx_func {
+			phandle = <0x1ce>;
+		};
+
+		gpio134_pmx_idle {
+			phandle = <0x1e2>;
+		};
+
+		gpio135_pmx_func {
+			phandle = <0x1cf>;
+		};
+
+		gpio135_pmx_idle {
+			phandle = <0x1e3>;
+		};
+
+		gpio136_pmx_func {
+			phandle = <0x1d0>;
+		};
+
+		gpio136_pmx_idle {
+			phandle = <0x1e4>;
+		};
+
+		gpio137_pmx_func {
+			phandle = <0x1d1>;
+		};
+
+		gpio137_pmx_idle {
+			phandle = <0x1e5>;
+		};
+	};
+
+	pinmux@fc182800 {
+		gpio128_cfg_func {
+			phandle = <0x1d2>;
+		};
+
+		gpio128_cfg_idle {
+			phandle = <0x1e6>;
+		};
+
+		gpio129_cfg_func {
+			phandle = <0x1d3>;
+		};
+
+		gpio129_cfg_idle {
+			phandle = <0x1e7>;
+		};
+
+		gpio130_cfg_func {
+			phandle = <0x1d4>;
+		};
+
+		gpio130_cfg_idle {
+			phandle = <0x1e8>;
+		};
+
+		gpio131_cfg_func {
+			phandle = <0x1d5>;
+		};
+
+		gpio131_cfg_idle {
+			pinctrl-single,bias-pulldown = <0x02 0x02 0x00 0x02>;
+			phandle = <0x1e9>;
+		};
+
+		gpio132_cfg_func {
+			phandle = <0x1d6>;
+		};
+
+		gpio132_cfg_idle {
+			phandle = <0x1ea>;
+		};
+
+		gpio133_cfg_func {
+			phandle = <0x1d7>;
+		};
+
+		gpio133_cfg_idle {
+			phandle = <0x1eb>;
+		};
+
+		gpio134_cfg_func {
+			phandle = <0x1d8>;
+		};
+
+		gpio134_cfg_idle {
+			phandle = <0x1ec>;
+		};
+
+		gpio135_cfg_func {
+			phandle = <0x1d9>;
+		};
+
+		gpio135_cfg_idle {
+			phandle = <0x1ed>;
+		};
+
+		gpio136_cfg_func {
+			phandle = <0x1da>;
+		};
+
+		gpio136_cfg_idle {
+			phandle = <0x1ee>;
+		};
+
+		gpio137_cfg_func {
+			phandle = <0x1db>;
+		};
+
+		gpio137_cfg_idle {
+			phandle = <0x1ef>;
+		};
+	};
+
+	pinmux@ff37e000 {
+		gpio160_pmx_func {
+			phandle = <0x1f1>;
+		};
+
+		gpio160_pmx_idle {
+			phandle = <0x1fd>;
+		};
+
+		gpio161_pmx_func {
+			phandle = <0x1f2>;
+		};
+
+		gpio161_pmx_idle {
+			phandle = <0x1fe>;
+		};
+
+		gpio162_pmx_func {
+			phandle = <0x1f3>;
+		};
+
+		gpio162_pmx_idle {
+			phandle = <0x1ff>;
+		};
+
+		gpio163_pmx_func {
+			phandle = <0x1f4>;
+		};
+
+		gpio163_pmx_idle {
+			phandle = <0x200>;
+		};
+
+		gpio164_pmx_func {
+			phandle = <0x1f5>;
+		};
+
+		gpio164_pmx_idle {
+			phandle = <0x201>;
+		};
+
+		gpio165_pmx_func {
+			phandle = <0x1f6>;
+		};
+
+		gpio165_pmx_idle {
+			phandle = <0x202>;
+		};
+	};
+
+	pinmux@ff37e800 {
+		gpio160_cfg_func {
+			phandle = <0x1f7>;
+		};
+
+		gpio160_cfg_idle {
+			phandle = <0x203>;
+		};
+
+		gpio161_cfg_func {
+			phandle = <0x1f8>;
+		};
+
+		gpio161_cfg_idle {
+			phandle = <0x204>;
+		};
+
+		gpio162_cfg_func {
+			phandle = <0x1f9>;
+		};
+
+		gpio162_cfg_idle {
+			phandle = <0x205>;
+		};
+
+		gpio163_cfg_func {
+			phandle = <0x1fa>;
+		};
+
+		gpio163_cfg_idle {
+			phandle = <0x206>;
+		};
+
+		gpio164_cfg_func {
+			phandle = <0x1fb>;
+		};
+
+		gpio164_cfg_idle {
+			phandle = <0x207>;
+		};
+
+		gpio165_cfg_func {
+			phandle = <0x1fc>;
+		};
+
+		gpio165_cfg_idle {
+			phandle = <0x208>;
+		};
+	};
+
+	amba {
+		gpio@e8a0c000 {
+			phandle = <0x249>;
+		};
+
+		gpio@e8a0d000 {
+			phandle = <0x23e>;
+		};
+
+		gpio@e8a0f000 {
+			phandle = <0x1b4>;
+		};
+
+		gpio@e8a12000 {
+			phandle = <0x220>;
+		};
+
+		gpio@e8a14000 {
+			phandle = <0x247>;
+		};
+
+		gpio@fff0c000 {
+			phandle = <0x238>;
+		};
+
+		gpio@fff0e000 {
+			phandle = <0xa4>;
+		};
+
+		gpio@fff10000 {
+			phandle = <0x23d>;
+		};
+	};
+
+	cc_anti_corrosion {
+		compatible = "huawei,cc-anti-corrosion";
+		cc_corrosion_gpio = <0xa4 0x00 0x00>;
+		pinctrl-names = "default", "idle";
+		pinctrl-0 = <0xa5 0xa6>;
+		pinctrl-1 = <0xa7 0xa8>;
+		gpio_mode = <0x00>;
+		status = "disabled";
+		phandle = <0x477>;
+	};
+
+	modem_pinctrl {
+		pinctrl-0 = <0x06 0x04 0x94 0x03 0x98 0x01 0xffff 0xffff 0x06 0x05 0x98 0x03 0x9c 0x00 0xffff 0xffff 0x07 0x02 0xac 0x02 0xb0 0x00 0xffff 0xffff 0x07 0x06 0xbc 0x01 0xc0 0x00 0x01 0x00 0x07 0x07 0xc0 0x01 0xc4 0x00 0x01 0x00 0x08 0x00 0xc4 0x01 0xc8 0x00 0x01 0x00 0x08 0x01 0xc8 0x01 0xcc 0x00 0xffff 0xffff 0x08 0x02 0xcc 0x01 0xd0 0x00 0xffff 0xffff 0x08 0x03 0xd0 0x01 0xd4 0x00 0xffff 0xffff 0x08 0x04 0xd4 0x01 0xd8 0x00 0xffff 0xffff 0x08 0x05 0xd8 0x01 0xdc 0x00 0xffff 0xffff 0x08 0x06 0xdc 0x01 0xe0 0x00 0xffff 0xffff 0x08 0x07 0xe0 0x01 0xe4 0x00 0xffff 0xffff 0x09 0x00 0xe4 0x01 0xe8 0x00 0xffff 0xffff 0x09 0x01 0xe8 0x01 0xec 0x00 0xffff 0xffff 0x09 0x02 0xec 0x01 0xf0 0x00 0xffff 0xffff 0x09 0x03 0xf0 0x01 0xf4 0x00 0xffff 0xffff 0x09 0x04 0xf4 0x01 0xf8 0x00 0xffff 0xffff 0x09 0x05 0xf8 0x01 0xfc 0x00 0xffff 0xffff 0x09 0x06 0xfc 0x01 0x100 0x00 0xffff 0xffff 0x09 0x07 0x100 0x00 0x104 0x00 0x01 0x00 0x0a 0x00 0x104 0x00 0x108 0x00 0x01 0x00 0x0a 0x01 0x108 0x00 0x10c 0x00 0x01 0x00 0x0a 0x02 0x10c 0x01 0x110 0x00 0xffff 0xffff 0x0a 0x03 0x110 0x01 0x114 0x00 0xffff 0xffff 0x0a 0x04 0x114 0x01 0x118 0x00 0x01 0x00 0x0a 0x05 0x118 0x01 0x11c 0x00 0x01 0x00 0x0a 0x06 0x11c 0x02 0x120 0x00 0xffff 0xffff 0x0a 0x07 0x120 0x02 0x124 0x02 0xffff 0xffff 0x0b 0x00 0x124 0x01 0x128 0x00 0xffff 0xffff 0x0b 0x01 0x128 0x01 0x12c 0x02 0xffff 0xffff 0x0b 0x02 0x12c 0x01 0x130 0x00 0xffff 0xffff 0x0b 0x03 0x130 0x01 0x134 0x02 0xffff 0xffff 0x0b 0x04 0x134 0x01 0x138 0x00 0xffff 0xffff 0x0b 0x05 0x138 0x01 0x13c 0x02 0xffff 0xffff 0x0b 0x06 0x13c 0x01 0x140 0x00 0xffff 0xffff 0x0b 0x07 0x140 0x01 0x144 0x02 0xffff 0xffff 0x0c 0x00 0x144 0x01 0x148 0x00 0xffff 0xffff 0x12 0x05 0xac 0x03 0xdc 0x00 0xffff 0xffff 0x18 0x05 0x4c 0x00 0x78 0x01 0x00 0xffff 0x1a 0x07 0x718 0x01 0x718 0x00 0xffff 0xffff>;
+		pinctrl-1 = <0x06 0x04 0x94 0x03 0x98 0x01 0xffff 0xffff 0x06 0x05 0x98 0x03 0x9c 0x00 0xffff 0xffff 0x07 0x02 0xac 0x02 0xb0 0x00 0xffff 0xffff 0x07 0x06 0xbc 0x01 0xc0 0x00 0x01 0x00 0x07 0x07 0xc0 0x01 0xc4 0x00 0x01 0x00 0x08 0x00 0xc4 0xffff 0xc8 0xffff 0xffff 0xffff 0x08 0x01 0xc8 0x01 0xcc 0x00 0xffff 0xffff 0x08 0x02 0xcc 0x01 0xd0 0x00 0xffff 0xffff 0x08 0x03 0xd0 0x01 0xd4 0x00 0xffff 0xffff 0x08 0x04 0xd4 0x01 0xd8 0x00 0xffff 0xffff 0x08 0x05 0xd8 0x01 0xdc 0x00 0xffff 0xffff 0x08 0x06 0xdc 0x01 0xe0 0x00 0xffff 0xffff 0x08 0x07 0xe0 0x01 0xe4 0x00 0xffff 0xffff 0x09 0x00 0xe4 0x01 0xe8 0x00 0xffff 0xffff 0x09 0x01 0xe8 0x01 0xec 0x00 0xffff 0xffff 0x09 0x02 0xec 0x01 0xf0 0x00 0xffff 0xffff 0x09 0x03 0xf0 0x01 0xf4 0x00 0xffff 0xffff 0x09 0x04 0xf4 0x01 0xf8 0x00 0xffff 0xffff 0x09 0x05 0xf8 0x01 0xfc 0x00 0xffff 0xffff 0x09 0x06 0xfc 0x01 0x100 0x00 0xffff 0xffff 0x09 0x07 0x100 0x00 0x104 0x00 0x01 0xffff 0x0a 0x00 0x104 0x00 0x108 0x00 0x01 0xffff 0x0a 0x01 0x108 0x00 0x10c 0x00 0x01 0xffff 0x0a 0x02 0x10c 0x01 0x110 0x00 0xffff 0xffff 0x0a 0x03 0x110 0x01 0x114 0x00 0xffff 0xffff 0x0a 0x04 0x114 0x01 0x118 0x00 0x01 0x00 0x0a 0x05 0x118 0x01 0x11c 0x00 0x01 0x00 0x0a 0x06 0x11c 0x02 0x120 0x00 0xffff 0xffff 0x0a 0x07 0x120 0x02 0x124 0x02 0xffff 0xffff 0x0b 0x00 0x124 0x01 0x128 0x00 0xffff 0xffff 0x0b 0x01 0x128 0x01 0x12c 0x02 0xffff 0xffff 0x0b 0x02 0x12c 0x01 0x130 0x00 0xffff 0xffff 0x0b 0x03 0x130 0x01 0x134 0x02 0xffff 0xffff 0x0b 0x04 0x134 0x01 0x138 0x00 0xffff 0xffff 0x0b 0x05 0x138 0x01 0x13c 0x02 0xffff 0xffff 0x0b 0x06 0x13c 0x01 0x140 0x00 0xffff 0xffff 0x0b 0x07 0x140 0x01 0x144 0x02 0xffff 0xffff 0x0c 0x00 0x144 0x01 0x148 0x00 0xffff 0xffff 0x12 0x05 0xac 0x03 0xdc 0x00 0xffff 0xffff 0x18 0x05 0x4c 0xffff 0x78 0xffff 0xffff 0xffff 0x1a 0x07 0x718 0x01 0x718 0x00 0xffff 0xffff>;
+		pinctrl-2 = <0x06 0x04 0x94 0x03 0x98 0x01 0xffff 0xffff 0x06 0x05 0x98 0x03 0x9c 0x00 0xffff 0xffff 0x07 0x02 0xac 0x02 0xb0 0x00 0xffff 0xffff 0x07 0x06 0xbc 0x00 0xc0 0x00 0x00 0x00 0x07 0x07 0xc0 0x00 0xc4 0x00 0x00 0x00 0x08 0x00 0xc4 0xffff 0xc8 0xffff 0xffff 0xffff 0x08 0x01 0xc8 0x01 0xcc 0x00 0xffff 0xffff 0x08 0x02 0xcc 0x01 0xd0 0x00 0xffff 0xffff 0x08 0x03 0xd0 0x01 0xd4 0x00 0xffff 0xffff 0x08 0x04 0xd4 0x01 0xd8 0x00 0xffff 0xffff 0x08 0x05 0xd8 0x01 0xdc 0x00 0xffff 0xffff 0x08 0x06 0xdc 0x01 0xe0 0x00 0xffff 0xffff 0x08 0x07 0xe0 0x01 0xe4 0x00 0xffff 0xffff 0x09 0x00 0xe4 0x01 0xe8 0x00 0xffff 0xffff 0x09 0x01 0xe8 0x01 0xec 0x00 0xffff 0xffff 0x09 0x02 0xec 0x01 0xf0 0x00 0xffff 0xffff 0x09 0x03 0xf0 0x01 0xf4 0x00 0xffff 0xffff 0x09 0x04 0xf4 0x01 0xf8 0x00 0xffff 0xffff 0x09 0x05 0xf8 0x01 0xfc 0x00 0xffff 0xffff 0x09 0x06 0xfc 0x01 0x100 0x00 0xffff 0xffff 0x09 0x07 0x100 0x00 0x104 0x00 0x01 0xffff 0x0a 0x00 0x104 0x00 0x108 0x00 0x01 0xffff 0x0a 0x01 0x108 0x00 0x10c 0x00 0x01 0xffff 0x0a 0x02 0x10c 0x01 0x110 0x00 0xffff 0xffff 0x0a 0x03 0x110 0x01 0x114 0x00 0xffff 0xffff 0x0a 0x04 0x114 0x00 0x118 0x00 0x00 0x00 0x0a 0x05 0x118 0x00 0x11c 0x00 0x00 0x00 0x0a 0x06 0x11c 0x02 0x120 0x00 0xffff 0xffff 0x0a 0x07 0x120 0x02 0x124 0x02 0xffff 0xffff 0x0b 0x00 0x124 0x01 0x128 0x00 0xffff 0xffff 0x0b 0x01 0x128 0x01 0x12c 0x02 0xffff 0xffff 0x0b 0x02 0x12c 0x01 0x130 0x00 0xffff 0xffff 0x0b 0x03 0x130 0x01 0x134 0x02 0xffff 0xffff 0x0b 0x04 0x134 0x01 0x138 0x00 0xffff 0xffff 0x0b 0x05 0x138 0x01 0x13c 0x02 0xffff 0xffff 0x0b 0x06 0x13c 0x01 0x140 0x00 0xffff 0xffff 0x0b 0x07 0x140 0x01 0x144 0x02 0xffff 0xffff 0x0c 0x00 0x144 0x01 0x148 0x00 0xffff 0xffff 0x12 0x05 0xac 0x03 0xdc 0x00 0xffff 0xffff 0x18 0x05 0x4c 0xffff 0x78 0xffff 0xffff 0xffff 0x1a 0x07 0x718 0x01 0x718 0x00 0xffff 0xffff>;
+		phandle = <0x478>;
+	};
+
+	cci_extra_pmu@0xe81ff000 {
+		phandle = <0x479>;
+	};
+
+	cci_extra_pmu@0xe81fd000 {
+		phandle = <0x47a>;
+	};
+
+	prktimer@fff0a000 {
+		phandle = <0x47b>;
+	};
+
+	timer@fff14000 {
+		clocks = <0xa9 0xa9 0x28>;
+		phandle = <0x47c>;
+	};
+
+	clocks@0 {
+		clkin_sys {
+			phandle = <0xaa>;
+		};
+
+		clkin_ref {
+			phandle = <0xab>;
+		};
+
+		clk_fll_src {
+			phandle = <0xd2>;
+		};
+
+		clk_ppll0 {
+			phandle = <0xb3>;
+		};
+
+		clk_ppll1 {
+			phandle = <0xad>;
+		};
+
+		clk_ppll2 {
+			phandle = <0xae>;
+		};
+
+		clk_ppll3 {
+			phandle = <0xaf>;
+		};
+
+		clk_ppll4 {
+			phandle = <0xb0>;
+		};
+
+		clk_ppll6 {
+			phandle = <0xb1>;
+		};
+
+		clk_ppll7 {
+			phandle = <0xb2>;
+		};
+
+		clk_ppll_pcie {
+			phandle = <0x133>;
+		};
+
+		clk_pciepll_rev {
+			phandle = <0xd6>;
+		};
+
+		clk_scpll {
+			phandle = <0x163>;
+		};
+
+		clk_modem_base {
+			phandle = <0x142>;
+		};
+
+		uart0clk_dbg {
+			phandle = <0x47d>;
+		};
+
+		osc32khz {
+			phandle = <0xa9>;
+		};
+
+		osc19mhz {
+			phandle = <0x47e>;
+		};
+
+		clk_480m {
+			phandle = <0x47f>;
+		};
+
+		clk_invalid {
+			phandle = <0x103>;
+		};
+
+		clk_fpga_1p92 {
+			phandle = <0x480>;
+		};
+
+		clk_fpga_2m {
+			phandle = <0x481>;
+		};
+
+		clk_fpga_10m {
+			phandle = <0x482>;
+		};
+
+		clk_fpga_19m {
+			phandle = <0x483>;
+		};
+
+		clk_fpga_20m {
+			phandle = <0x484>;
+		};
+
+		clk_fpga_24m {
+			phandle = <0x485>;
+		};
+
+		clk_fpga_26m {
+			phandle = <0x486>;
+		};
+
+		clk_fpga_27m {
+			phandle = <0x487>;
+		};
+
+		clk_fpga_32m {
+			phandle = <0x488>;
+		};
+
+		clk_fpga_40m {
+			phandle = <0x489>;
+		};
+
+		clk_fpga_48m {
+			phandle = <0x48a>;
+		};
+
+		clk_fpga_50m {
+			phandle = <0x48b>;
+		};
+
+		clk_fpga_57m {
+			phandle = <0x48c>;
+		};
+
+		clk_fpga_60m {
+			phandle = <0x48d>;
+		};
+
+		clk_fpga_64m {
+			phandle = <0x48e>;
+		};
+
+		clk_fpga_80m {
+			phandle = <0x48f>;
+		};
+
+		clk_fpga_100m {
+			phandle = <0x490>;
+		};
+
+		clk_fpga_160m {
+			phandle = <0x491>;
+		};
+
+		clk_pmuctrl@0xfff34000 {
+			phandle = <0x492>;
+
+			clk_abb_192 {
+				clocks = <0xaa>;
+				phandle = <0xac>;
+			};
+
+			clk_pmu32ka {
+				clocks = <0xab>;
+				phandle = <0x493>;
+			};
+
+			clk_pmu32kb {
+				clocks = <0xab>;
+				phandle = <0x248>;
+			};
+
+			clk_pmu32kc {
+				clocks = <0xab>;
+				phandle = <0x23f>;
+			};
+
+			clk_wifi {
+				clocks = <0xab>;
+				phandle = <0x494>;
+			};
+
+			clk_pmuaudioclk {
+				clocks = <0xaa>;
+				phandle = <0x495>;
+			};
+		};
+
+		clk_pctrl@0xE8A09000 {
+			phandle = <0x496>;
+
+			clk_usb_tcxo_en {
+				clocks = <0xac>;
+				phandle = <0x12e>;
+			};
+
+			clk_ufs_tcxo_en {
+				clocks = <0xac>;
+				phandle = <0x497>;
+			};
+		};
+
+		clk_pmctrl@0xfff31000 {
+			phandle = <0x498>;
+
+			clk_ap_ppll1 {
+				clocks = <0xad>;
+				phandle = <0x499>;
+			};
+
+			clk_ap_ppll2 {
+				clocks = <0xae>;
+				phandle = <0xdc>;
+			};
+
+			clk_ap_ppll3 {
+				clocks = <0xaf>;
+				phandle = <0xdd>;
+			};
+
+			clk_ap_ppll4 {
+				clocks = <0xb0>;
+				phandle = <0xde>;
+			};
+
+			clk_ap_ppll6 {
+				clocks = <0xb1>;
+				phandle = <0xdf>;
+			};
+
+			clk_ap_ppll7 {
+				clocks = <0xb2>;
+				phandle = <0xe0>;
+			};
+		};
+
+		sctrl@0xfff0a000 {
+			phandle = <0x49a>;
+
+			clk_ap_ppll0 {
+				clocks = <0xb3>;
+				phandle = <0xb4>;
+			};
+
+			ppll0_en_acpu {
+				clocks = <0xb3>;
+				phandle = <0x49b>;
+			};
+
+			ppll0_gt_cpu {
+				clocks = <0xb3>;
+				phandle = <0x49c>;
+			};
+
+			clk_ppll0_media {
+				clocks = <0xb4>;
+				phandle = <0x16f>;
+			};
+
+			pclk_gpio18 {
+				clocks = <0xb5>;
+			};
+
+			pclk_gpio19 {
+				clocks = <0xb5>;
+			};
+
+			sc_div_aobus {
+				clocks = <0xb4>;
+				phandle = <0xb5>;
+			};
+
+			clk_timer0_a {
+				clocks = <0xb6>;
+				phandle = <0x49d>;
+			};
+
+			clk_timer0_b {
+				clocks = <0xb7>;
+				phandle = <0x49e>;
+			};
+
+			clk_timer2_a {
+				clocks = <0xb8>;
+				phandle = <0x49f>;
+			};
+
+			clk_timer2_b {
+				clocks = <0xb9>;
+				phandle = <0x4a0>;
+			};
+
+			clk_timer3_a {
+				clocks = <0xba>;
+				phandle = <0x4a1>;
+			};
+
+			clk_timer3_b {
+				clocks = <0xbb>;
+				phandle = <0x4a2>;
+			};
+
+			clkmux_timer0_a {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xb6>;
+			};
+
+			clkmux_timer0_b {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xb7>;
+			};
+
+			clkmux_timer2_a {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xb8>;
+			};
+
+			clkmux_timer2_b {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xb9>;
+			};
+
+			clkmux_timer3_a {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xba>;
+			};
+
+			clkmux_timer3_b {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xbb>;
+			};
+
+			clk_factor_tcxo {
+				clocks = <0xaa>;
+				phandle = <0xbc>;
+			};
+
+			clk_timer0 {
+				clocks = <0xb5>;
+				phandle = <0x4a3>;
+			};
+
+			clk_timer2 {
+				clocks = <0xb5>;
+				phandle = <0x4a4>;
+			};
+
+			clk_timer3 {
+				clocks = <0xb5>;
+				phandle = <0x4a5>;
+			};
+
+			clk_timer4_a {
+				clocks = <0xbd>;
+				phandle = <0x4a6>;
+			};
+
+			clk_timer4_b {
+				clocks = <0xbe>;
+				phandle = <0x4a7>;
+			};
+
+			clk_timer5_a {
+				clocks = <0xbf>;
+				phandle = <0x4a8>;
+			};
+
+			clk_timer5_b {
+				clocks = <0xc0>;
+				phandle = <0x21a>;
+			};
+
+			clk_timer6_a {
+				clocks = <0xc1>;
+				phandle = <0x4a9>;
+			};
+
+			clk_timer6_b {
+				clocks = <0xc2>;
+				phandle = <0x4aa>;
+			};
+
+			clk_timer7_a {
+				clocks = <0xc3>;
+				phandle = <0x4ab>;
+			};
+
+			clk_timer7_b {
+				clocks = <0xc4>;
+				phandle = <0x4ac>;
+			};
+
+			clk_timer8_a {
+				clocks = <0xc5>;
+				phandle = <0x4ad>;
+			};
+
+			clk_timer8_b {
+				clocks = <0xc6>;
+				phandle = <0x4ae>;
+			};
+
+			clkmux_timer4_a {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xbd>;
+			};
+
+			clkmux_timer4_b {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xbe>;
+			};
+
+			clkmux_timer5_a {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xbf>;
+			};
+
+			clkmux_timer5_b {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xc0>;
+			};
+
+			clkmux_timer6_a {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xc1>;
+			};
+
+			clkmux_timer6_b {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xc2>;
+			};
+
+			clkmux_timer7_a {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xc3>;
+			};
+
+			clkmux_timer7_b {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xc4>;
+			};
+
+			clkmux_timer8_a {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xc5>;
+			};
+
+			clkmux_timer8_b {
+				clocks = <0xab 0x28 0xbc 0x28>;
+				phandle = <0xc6>;
+			};
+
+			clk_timer4 {
+				clocks = <0xb5>;
+				phandle = <0x4af>;
+			};
+
+			clk_timer5 {
+				clocks = <0xb5>;
+				phandle = <0x212>;
+			};
+
+			clk_timer6 {
+				clocks = <0xb5>;
+				phandle = <0x4b0>;
+			};
+
+			clk_timer7 {
+				clocks = <0xb5>;
+				phandle = <0x4b1>;
+			};
+
+			clk_timer8 {
+				clocks = <0xb5>;
+				phandle = <0x4b2>;
+			};
+
+			clk_spi3 {
+				clocks = <0xc7>;
+			};
+
+			pclk_spi3 {
+				clocks = <0xc7>;
+				phandle = <0x4b3>;
+			};
+
+			clk_ufssub_mux {
+				clocks = <0xaa 0xb4>;
+				phandle = <0xc8>;
+			};
+
+			clk_ufssub_div {
+				clocks = <0xc8>;
+				phandle = <0xc9>;
+			};
+
+			clk_ufs_subsys {
+				clocks = <0xc9>;
+				phandle = <0x4b4>;
+			};
+
+			clk_ufsio_ref {
+				clocks = <0xaa>;
+				phandle = <0x209>;
+			};
+
+			clk_gt_ioperi {
+				clocks = <0xb4>;
+				phandle = <0xca>;
+			};
+
+			sc_div_ioperi {
+				clocks = <0xca>;
+				phandle = <0xc7>;
+			};
+
+			pclk_rtc {
+				clocks = <0xb5>;
+				phandle = <0x4b5>;
+			};
+
+			pclk_rtc1 {
+				clocks = <0xb5>;
+				phandle = <0x4b6>;
+			};
+
+			pclk_ao_gpio0 {
+				clocks = <0xb5>;
+			};
+
+			pclk_ao_gpio1 {
+				clocks = <0xb5>;
+			};
+
+			pclk_ao_gpio2 {
+				clocks = <0xb5>;
+			};
+
+			pclk_ao_gpio3 {
+				clocks = <0xb5>;
+			};
+
+			pclk_ao_gpio4 {
+				clocks = <0xb5>;
+			};
+
+			pclk_ao_gpio5 {
+				clocks = <0xb5>;
+				phandle = <0x4b7>;
+			};
+
+			pclk_ao_gpio6 {
+				clocks = <0xb5>;
+			};
+
+			clk_out0 {
+				clocks = <0xcb>;
+				phandle = <0x4b8>;
+			};
+
+			clk_out1 {
+				clocks = <0xcc>;
+				phandle = <0x4b9>;
+			};
+
+			clkdiv_out0tcxo {
+				clocks = <0xaa>;
+				phandle = <0xcd>;
+			};
+
+			clkdiv_out1tcxo {
+				clocks = <0xaa>;
+				phandle = <0xcf>;
+			};
+
+			clkmux_clkout0 {
+				clocks = <0xab 0xcd 0xce 0xce>;
+				phandle = <0xcb>;
+			};
+
+			clkmux_clkout1 {
+				clocks = <0xab 0xcf 0xd0 0xd0>;
+				phandle = <0xcc>;
+			};
+
+			pclk_syscnt {
+				clocks = <0xb5>;
+				phandle = <0x4ba>;
+			};
+
+			clk_syscnt {
+				clocks = <0xaa>;
+				phandle = <0x4bb>;
+			};
+
+			clk_asp_subsys_peri {
+				clocks = <0xd1>;
+				phandle = <0x4bc>;
+			};
+
+			sel_asp_subsys_peri {
+				clocks = <0xb3 0xd2>;
+				phandle = <0xd1>;
+			};
+
+			clkdiv_asp_subsys_peri {
+				clocks = <0xd3>;
+				phandle = <0x4bd>;
+			};
+
+			clkgt_asp_subsys_peri {
+				clocks = <0xb4>;
+				phandle = <0xd3>;
+			};
+
+			clk_asp_subsys {
+				clocks = <0xd4>;
+				phandle = <0x4be>;
+			};
+
+			clk_asp_pll_sel {
+				clocks = <0xb3 0xd2 0xd5 0xd6>;
+				phandle = <0xd4>;
+			};
+
+			clkdiv_aspsys {
+				clocks = <0xd7>;
+				phandle = <0x4bf>;
+			};
+
+			clk_asp_tcxo {
+				clocks = <0xaa>;
+				phandle = <0x4c0>;
+			};
+
+			clkgt_aspsys {
+				clocks = <0xb4>;
+				phandle = <0xd7>;
+			};
+
+			clk_dp_audio_pll {
+				clocks = <0xd8>;
+				phandle = <0x4c1>;
+			};
+
+			pclk_ao_loadmonitor {
+				clocks = <0xb5>;
+				phandle = <0x4c2>;
+			};
+
+			clk_ao_loadmonitor {
+				clocks = <0xd9>;
+				phandle = <0x4c3>;
+			};
+
+			clk_ao_loadmonitor_div {
+				clocks = <0xda>;
+				phandle = <0xd9>;
+			};
+
+			clk_ao_loadmonitor_gt {
+				clocks = <0xdb>;
+				phandle = <0xda>;
+			};
+
+			clk_ao_loadmonitor_sw {
+				clocks = <0xd2 0xb3>;
+				phandle = <0xdb>;
+			};
+		};
+
+		crgctrl@0xfff35000 {
+			phandle = <0x4c4>;
+
+			ppll1_en_acpu {
+				clocks = <0xad>;
+				phandle = <0x4c5>;
+			};
+
+			ppll2_en_acpu {
+				clocks = <0xae>;
+				phandle = <0x4c6>;
+			};
+
+			ppll3_en_acpu {
+				clocks = <0xaf>;
+				phandle = <0x4c7>;
+			};
+
+			ppll1_gt_cpu {
+				clocks = <0xad>;
+				phandle = <0x4c8>;
+			};
+
+			ppll2_gt_cpu {
+				clocks = <0xae>;
+				phandle = <0x4c9>;
+			};
+
+			ppll3_gt_cpu {
+				clocks = <0xaf>;
+				phandle = <0x4ca>;
+			};
+
+			clk_ppll2_media {
+				clocks = <0xdc>;
+				phandle = <0x170>;
+			};
+
+			clk_ppll3_media {
+				clocks = <0xdd>;
+				phandle = <0x171>;
+			};
+
+			clk_ppll4_media {
+				clocks = <0xde>;
+				phandle = <0x182>;
+			};
+
+			clk_ppll6_media {
+				clocks = <0xdf>;
+				phandle = <0x18d>;
+			};
+
+			clk_ppll7_media {
+				clocks = <0xe0>;
+				phandle = <0x17a>;
+			};
+
+			sel_sysbus {
+				clocks = <0xad 0xb4>;
+				phandle = <0xe1>;
+			};
+
+			div_sysbus_pll {
+				clocks = <0xe1>;
+				phandle = <0xe2>;
+			};
+
+			sc_div_cfgbus {
+				clocks = <0xe2>;
+				phandle = <0xe3>;
+			};
+
+			pclk_gpio0 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio1 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio2 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio3 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio4 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio5 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio6 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio7 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio8 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio9 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio10 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio11 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio12 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio13 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio14 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio15 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio16 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio17 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio20 {
+				clocks = <0xe3>;
+			};
+
+			pclk_gpio21 {
+				clocks = <0xe3>;
+			};
+
+			pclk_wd0_high {
+				clocks = <0xe3>;
+				phandle = <0xe5>;
+			};
+
+			clk_wd0_high {
+				clocks = <0xe3>;
+				phandle = <0x4cb>;
+			};
+
+			pclk_wd0 {
+				clocks = <0xe4>;
+				phandle = <0x4cc>;
+			};
+
+			pclk_wd1 {
+				clocks = <0xe3>;
+				phandle = <0x4cd>;
+			};
+
+			clk_wd0_mux {
+				clocks = <0xab 0xe5>;
+				phandle = <0xe4>;
+			};
+
+			pclk_dsi0 {
+				clocks = <0xe3>;
+				phandle = <0x22c>;
+			};
+
+			pclk_dsi1 {
+				clocks = <0xe3>;
+				phandle = <0x22d>;
+			};
+
+			clk_codecssi {
+				clocks = <0xaa>;
+				phandle = <0x4ce>;
+			};
+
+			pclk_codecssi {
+				clocks = <0xe3>;
+				phandle = <0x4cf>;
+			};
+
+			clk_mmc0bus_div {
+				clocks = <0xe6>;
+				phandle = <0xed>;
+			};
+
+			hclk_usb3otg {
+				clocks = <0xe2>;
+				phandle = <0x20d>;
+			};
+
+			autodiv_sysbus {
+				clocks = <0xe2>;
+				phandle = <0xe7>;
+			};
+
+			autodiv_emmc0bus {
+				clocks = <0xe7>;
+				phandle = <0xe6>;
+			};
+
+			aclk_usb3_dvfs {
+				clocks = <0xe6>;
+				phandle = <0x4d0>;
+			};
+
+			pclk_ioc {
+				clocks = <0xaa>;
+				phandle = <0x4d1>;
+			};
+
+			clk_mmc1bus_div {
+				clocks = <0xe2>;
+				phandle = <0xe8>;
+			};
+
+			hclk_sdio {
+				clocks = <0xe2>;
+				phandle = <0x1c7>;
+			};
+
+			pclk_pcie_sys {
+				clocks = <0xe8>;
+				phandle = <0x21d>;
+			};
+
+			pclk_pcie_phy {
+				clocks = <0xe9>;
+				phandle = <0x21c>;
+			};
+
+			pclk_mmc1_pcie {
+				clocks = <0xea>;
+				phandle = <0xe9>;
+			};
+
+			pclk_pcie_div {
+				clocks = <0xeb>;
+				phandle = <0xea>;
+			};
+
+			pclk_pcie_andgt {
+				clocks = <0xec>;
+				phandle = <0xeb>;
+			};
+
+			pclk_mmc0_ioc {
+				clocks = <0xed>;
+				phandle = <0x4d2>;
+			};
+
+			pclk_mmc1_ioc {
+				clocks = <0xe8>;
+				phandle = <0x4d3>;
+			};
+
+			clk_atdvfs {
+				clocks = <0xee>;
+				phandle = <0xef>;
+			};
+
+			clk_at {
+				clocks = <0xef>;
+			};
+
+			clk_track {
+				clocks = <0xf0>;
+				phandle = <0x4d4>;
+			};
+
+			pclk_dbg {
+				clocks = <0xf1>;
+				phandle = <0x4d5>;
+			};
+
+			pclkdiv_dbg {
+				clocks = <0xee>;
+				phandle = <0xf1>;
+			};
+
+			clkdiv_track {
+				clocks = <0xee>;
+				phandle = <0xf0>;
+			};
+
+			aclk_perf_stat {
+				clocks = <0xf2>;
+				phandle = <0x1bf>;
+			};
+
+			pclk_perf_stat {
+				clocks = <0xf2>;
+				phandle = <0x1c0>;
+			};
+
+			clk_perf_div {
+				clocks = <0xf3>;
+				phandle = <0xf5>;
+			};
+
+			clk_perf_gt {
+				clocks = <0xf4>;
+				phandle = <0xf3>;
+			};
+
+			clk_perf_stat {
+				clocks = <0xf5>;
+				phandle = <0x1be>;
+			};
+
+			clk_cssys_div {
+				clocks = <0xe7>;
+				phandle = <0xee>;
+			};
+
+			clk_cssysdbg {
+				clocks = <0xee>;
+				phandle = <0x4d6>;
+			};
+
+			clk_dmabus_div {
+				clocks = <0xf6>;
+				phandle = <0xf2>;
+			};
+
+			clk_dmac {
+				clocks = <0xe2>;
+				phandle = <0x241>;
+			};
+
+			clk_dma_iomcu {
+				clocks = <0xd2>;
+				phandle = <0x4d7>;
+			};
+
+			clk_cssys_atclk {
+				clocks = <0xf2>;
+				phandle = <0x1c3>;
+			};
+
+			clk_sec_pll_mux {
+				clocks = <0xb3 0xdc>;
+				phandle = <0xf7>;
+			};
+
+			clk_sec_div {
+				clocks = <0xf7>;
+				phandle = <0xf8>;
+			};
+
+			clk_secs {
+				clocks = <0xf8>;
+				phandle = <0x1c1>;
+			};
+
+			clk_secp {
+				clocks = <0xf8>;
+				phandle = <0x1c2>;
+			};
+
+			clk_socp_acpu {
+				clocks = <0xe2>;
+				phandle = <0x4d8>;
+			};
+
+			clk_socpdef_div {
+				clocks = <0xf9>;
+				phandle = <0xfa>;
+			};
+
+			clk_socp_def_gt {
+				clocks = <0xb4>;
+				phandle = <0xf9>;
+			};
+
+			clk_socp_deflat {
+				clocks = <0xfa>;
+				phandle = <0x4d9>;
+			};
+
+			tclk_socp {
+				clocks = <0xaa>;
+				phandle = <0x4da>;
+			};
+
+			clk_timestp_gt {
+				clocks = <0xf2>;
+			};
+
+			clk_timestp_div {
+				phandle = <0xfb>;
+			};
+
+			clk_stamp_dvfs {
+				clocks = <0xfb>;
+				phandle = <0xfc>;
+			};
+
+			clk_time_stamp {
+				clocks = <0xfc>;
+				phandle = <0x1c4>;
+			};
+
+			clk_ipf {
+				clocks = <0xe2>;
+				phandle = <0x236>;
+			};
+
+			clk_ipf_psam {
+				clocks = <0xe2>;
+				phandle = <0x237>;
+			};
+
+			clk_pimon_gt {
+				clocks = <0xdc>;
+				phandle = <0xfd>;
+			};
+
+			clk_pimon_div {
+				clocks = <0xfd>;
+				phandle = <0xff>;
+			};
+
+			aclk_pimon {
+				clocks = <0xfe>;
+				phandle = <0x4db>;
+			};
+
+			pclk_pimon {
+				clocks = <0xe2>;
+				phandle = <0xfe>;
+			};
+
+			clk_pimon {
+				clocks = <0xff>;
+				phandle = <0x4dc>;
+			};
+
+			clk_vcodecbus2 {
+				clocks = <0x100>;
+				phandle = <0x4dd>;
+			};
+
+			clk_vcodbus_div {
+				clocks = <0x101>;
+				phandle = <0x100>;
+			};
+
+			clk_vcodbus_gt {
+				clocks = <0x102>;
+				phandle = <0x101>;
+			};
+
+			clk_vcodbus_mux {
+				clocks = <0x103 0xde 0xb4 0x103 0xdc 0x103 0x103 0x103 0xdd 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x102>;
+			};
+
+			clk_slimbus {
+				clocks = <0x104>;
+				phandle = <0x4de>;
+			};
+
+			clk_slimbus_div {
+				clocks = <0x105>;
+				phandle = <0x104>;
+			};
+
+			clk_slimbus_gt {
+				clocks = <0x106>;
+				phandle = <0x105>;
+			};
+
+			clk_slimbus_mux {
+				clocks = <0xad 0xdc 0xdd 0xdd>;
+				phandle = <0x106>;
+			};
+
+			clk_cci400_bp {
+				phandle = <0x4df>;
+			};
+
+			clk_cci400 {
+				phandle = <0x4e0>;
+			};
+
+			clk_factor_mmc {
+				clocks = <0xaa>;
+				phandle = <0x4e1>;
+			};
+
+			clk_sd {
+				clocks = <0x107>;
+				phandle = <0x1c5>;
+			};
+
+			hclk_sd {
+				clocks = <0xe2>;
+				phandle = <0x1f0>;
+			};
+
+			clk_sd_muxsys {
+				clocks = <0x108 0x109>;
+				phandle = <0x107>;
+			};
+
+			clk_sd_muxpll {
+				clocks = <0xb4 0xdd 0xdc 0xdc>;
+				phandle = <0x10b>;
+			};
+
+			clk_sd_div {
+				clocks = <0x10a>;
+				phandle = <0x109>;
+			};
+
+			clk_sd_gt {
+				clocks = <0x10b>;
+				phandle = <0x10a>;
+			};
+
+			clk_sd_sys {
+				clocks = <0x10c>;
+				phandle = <0x108>;
+			};
+
+			clk_sd_sys_gt {
+				clocks = <0xaa>;
+				phandle = <0x10c>;
+			};
+
+			clk_sdio {
+				clocks = <0x10d>;
+				phandle = <0x1c6>;
+			};
+
+			clk_sdio_muxsy {
+				clocks = <0x10e 0x10f>;
+				phandle = <0x10d>;
+			};
+
+			clk_sdio_muxpl {
+				clocks = <0xb4 0xdd 0xdc 0xdc>;
+				phandle = <0x111>;
+			};
+
+			clk_sdio_div {
+				clocks = <0x110>;
+				phandle = <0x10f>;
+			};
+
+			clk_sdio_gt {
+				clocks = <0x111>;
+				phandle = <0x110>;
+			};
+
+			clk_sdio_sys {
+				clocks = <0x112>;
+				phandle = <0x10e>;
+			};
+
+			clk_sdio_sys_gt {
+				clocks = <0xaa>;
+				phandle = <0x112>;
+			};
+
+			clk_a53hpm_mux {
+				clocks = <0xb4 0xdc>;
+				phandle = <0x113>;
+			};
+
+			clk_a53hpm_gt {
+				clocks = <0x113>;
+				phandle = <0x114>;
+			};
+
+			clk_a53hpm_div {
+				clocks = <0x114>;
+				phandle = <0xf4>;
+			};
+
+			clk_a57hpm {
+				clocks = <0xf4>;
+				phandle = <0x4e2>;
+			};
+
+			clk_a53hpm {
+				clocks = <0xf4>;
+				phandle = <0x4e3>;
+			};
+
+			clk_pa_a53 {
+				clocks = <0xf4>;
+				phandle = <0x4e4>;
+			};
+
+			clk_pa_a57 {
+				clocks = <0xf4>;
+				phandle = <0x4e5>;
+			};
+
+			clk_pa_g3d {
+				clocks = <0xf4>;
+				phandle = <0x4e6>;
+			};
+
+			clk_gpuhpm {
+				clocks = <0xf4>;
+				phandle = <0x4e7>;
+			};
+
+			clk_perihpm {
+				clocks = <0xf4>;
+				phandle = <0x4e8>;
+			};
+
+			clk_aohpm {
+				clocks = <0xf4>;
+				phandle = <0x4e9>;
+			};
+
+			sc_sel_320m_pll {
+				clocks = <0xdc 0xb4>;
+				phandle = <0x115>;
+			};
+
+			gt_clk_320m_pll {
+				clocks = <0x115>;
+				phandle = <0x116>;
+			};
+
+			sc_div_320m {
+				clocks = <0x116>;
+				phandle = <0xec>;
+			};
+
+			clk_uart1 {
+				clocks = <0x117>;
+			};
+
+			clk_uart4 {
+				clocks = <0x117>;
+			};
+
+			pclk_uart1 {
+				clocks = <0x117>;
+				phandle = <0x4ea>;
+			};
+
+			pclk_uart4 {
+				clocks = <0x117>;
+			};
+
+			clkmux_uarth {
+				clocks = <0xaa 0x118>;
+				phandle = <0x117>;
+			};
+
+			clkdiv_uarth {
+				clocks = <0x119>;
+				phandle = <0x118>;
+			};
+
+			clkgt_uarth {
+				clocks = <0xec>;
+				phandle = <0x119>;
+			};
+
+			clk_uart2 {
+				clocks = <0x11a>;
+			};
+
+			clk_uart5 {
+				clocks = <0x11a>;
+			};
+
+			pclk_uart2 {
+				clocks = <0x11a>;
+				phandle = <0x4eb>;
+			};
+
+			pclk_uart5 {
+				clocks = <0x11a>;
+				phandle = <0x4ec>;
+			};
+
+			clkmux_uartl {
+				clocks = <0xaa 0x11b>;
+				phandle = <0x11a>;
+			};
+
+			clkdiv_uartl {
+				clocks = <0x11c>;
+				phandle = <0x11b>;
+			};
+
+			clkgt_uartl {
+				clocks = <0xec>;
+				phandle = <0x11c>;
+			};
+
+			clk_uart0 {
+				clocks = <0x11d>;
+				phandle = <0x4ed>;
+			};
+
+			pclk_uart0 {
+				clocks = <0x11a>;
+			};
+
+			clkmux_uart0 {
+				clocks = <0xaa 0x11e>;
+				phandle = <0x11d>;
+			};
+
+			clkdiv_uart0 {
+				clocks = <0x11f>;
+				phandle = <0x11e>;
+			};
+
+			clkgt_uart0 {
+				clocks = <0xec>;
+				phandle = <0x11f>;
+			};
+
+			clk_uart0_fac {
+				clocks = <0x11d>;
+			};
+
+			clk_i2c3 {
+				clocks = <0x120>;
+			};
+
+			clk_i2c4 {
+				clocks = <0x120>;
+			};
+
+			clk_i2c7 {
+				clocks = <0x120>;
+			};
+
+			pclk_i2c3 {
+				clocks = <0x120>;
+				phandle = <0x4ee>;
+			};
+
+			pclk_i2c4 {
+				clocks = <0x120>;
+				phandle = <0x4ef>;
+			};
+
+			pclk_i2c7 {
+				clocks = <0x120>;
+				phandle = <0x4f0>;
+			};
+
+			clkdiv_i2c {
+				clocks = <0xec>;
+				phandle = <0x121>;
+			};
+
+			clkmux_i2c {
+				clocks = <0xaa 0x121>;
+				phandle = <0x120>;
+			};
+
+			clk_spi1 {
+				clocks = <0x122>;
+			};
+
+			clk_spi4 {
+				clocks = <0x122>;
+			};
+
+			pclk_spi1 {
+				clocks = <0x122>;
+				phandle = <0x4f1>;
+			};
+
+			pclk_spi4 {
+				clocks = <0x122>;
+				phandle = <0x4f2>;
+			};
+
+			clkmux_spi {
+				clocks = <0xaa 0x123>;
+				phandle = <0x122>;
+			};
+
+			clkdiv_spi {
+				clocks = <0x124>;
+				phandle = <0x123>;
+			};
+
+			clkgt_spi {
+				clocks = <0xec>;
+				phandle = <0x124>;
+			};
+
+			clk_timer9_a {
+				clocks = <0x125>;
+				phandle = <0x4f3>;
+			};
+
+			clk_timer9_b {
+				clocks = <0x126>;
+				phandle = <0x4f4>;
+			};
+
+			clk_timer10_a {
+				clocks = <0x127>;
+				phandle = <0x4f5>;
+			};
+
+			clk_timer10_b {
+				clocks = <0x128>;
+				phandle = <0x4f6>;
+			};
+
+			clk_timer11_a {
+				clocks = <0x129>;
+				phandle = <0x4f7>;
+			};
+
+			clk_timer11_b {
+				clocks = <0x12a>;
+				phandle = <0x4f8>;
+			};
+
+			clk_timer12_a {
+				clocks = <0x12b>;
+				phandle = <0x4f9>;
+			};
+
+			clk_timer12_b {
+				clocks = <0x12c>;
+				phandle = <0x4fa>;
+			};
+
+			clkmux_timer9_a {
+				clocks = <0xab 0xbc 0x28 0x28>;
+				phandle = <0x125>;
+			};
+
+			clkmux_timer9_b {
+				clocks = <0xab 0xbc 0x28 0x28>;
+				phandle = <0x126>;
+			};
+
+			clkmux_timer10_a {
+				clocks = <0xab 0xbc 0x28 0x28>;
+				phandle = <0x127>;
+			};
+
+			clkmux_timer10_b {
+				clocks = <0xab 0xbc 0x28 0x28>;
+				phandle = <0x128>;
+			};
+
+			clkmux_timer11_a {
+				clocks = <0xab 0xbc 0x28 0x28>;
+				phandle = <0x129>;
+			};
+
+			clkmux_timer11_b {
+				clocks = <0xab 0xbc 0x28 0x28>;
+				phandle = <0x12a>;
+			};
+
+			clkmux_timer12_a {
+				clocks = <0xab 0xbc 0x28 0x28>;
+				phandle = <0x12b>;
+			};
+
+			clkmux_timer12_b {
+				clocks = <0xab 0xbc 0x28 0x28>;
+				phandle = <0x12c>;
+			};
+
+			clk_timer9 {
+				clocks = <0x12d>;
+				phandle = <0x4fb>;
+			};
+
+			clk_timer10 {
+				clocks = <0x12d>;
+				phandle = <0x4fc>;
+			};
+
+			clk_timer11 {
+				clocks = <0x12d>;
+				phandle = <0x4fd>;
+			};
+
+			clk_timer12 {
+				clocks = <0x12d>;
+				phandle = <0x4fe>;
+			};
+
+			clk_usb3otg_ref {
+				clocks = <0xaa>;
+				phandle = <0x20b>;
+			};
+
+			clkfac_usb3phy {
+				clocks = <0xb4>;
+				phandle = <0x4ff>;
+			};
+
+			clk_usb2phy_ref {
+				clocks = <0xaa>;
+				phandle = <0x20c>;
+			};
+
+			clk_abb_usb {
+				clocks = <0x12e>;
+				phandle = <0x1bb>;
+			};
+
+			clk_pcieaux {
+				clocks = <0xaa>;
+				phandle = <0x21b>;
+			};
+
+			aclk_pcie {
+				clocks = <0x12f>;
+				phandle = <0x21e>;
+			};
+
+			clk_mmc1_pcie {
+				clocks = <0x130>;
+				phandle = <0x12f>;
+			};
+
+			clk_div_pcieaxi {
+				clocks = <0x131>;
+				phandle = <0x130>;
+			};
+
+			clk_gt_pcieaxi {
+				clocks = <0x132>;
+				phandle = <0x131>;
+			};
+
+			clkmux_pcieaxi {
+				clocks = <0xaa 0xb4>;
+				phandle = <0x132>;
+			};
+
+			clk_pciephy_ref {
+				clocks = <0x133>;
+				phandle = <0x1bd>;
+			};
+
+			clk_pcie_debounce {
+				clocks = <0x133>;
+				phandle = <0x500>;
+			};
+
+			clk_pcieio {
+				clocks = <0x133>;
+				phandle = <0x501>;
+			};
+
+			clk_pcie_hp {
+				clocks = <0x133>;
+				phandle = <0x502>;
+			};
+
+			clk_ufsphy_ref {
+				clocks = <0xaa>;
+				phandle = <0x1bc>;
+			};
+
+			clk_ao_asp {
+				clocks = <0x134>;
+				phandle = <0xd5>;
+			};
+
+			clk_ao_asp_div {
+				clocks = <0x135>;
+				phandle = <0x134>;
+			};
+
+			clkmux_ao_asp {
+				clocks = <0xdc 0xdd>;
+				phandle = <0x136>;
+			};
+
+			clk_ao_asp_gt {
+				clocks = <0x136>;
+				phandle = <0x135>;
+			};
+
+			pclk_pctrl {
+				clocks = <0x12d>;
+				phandle = <0x22e>;
+			};
+
+			clk_csi_trans {
+				clocks = <0x137>;
+				phandle = <0x503>;
+			};
+
+			clk_dsi_trans {
+				clocks = <0x138>;
+				phandle = <0x504>;
+			};
+
+			clk_csi_trans_div {
+				clocks = <0x139>;
+				phandle = <0x137>;
+			};
+
+			clk_dsi_trans_div {
+				clocks = <0x13a>;
+				phandle = <0x138>;
+			};
+
+			clk_gt_csi_trans {
+				clocks = <0xdc>;
+				phandle = <0x139>;
+			};
+
+			clk_gt_dsi_trans {
+				clocks = <0xdc>;
+				phandle = <0x13a>;
+			};
+
+			clk_ptp_gt {
+				clocks = <0xec>;
+				phandle = <0x13b>;
+			};
+
+			clk_ptp_div {
+				clocks = <0x13b>;
+				phandle = <0x12d>;
+			};
+
+			clk_pwm {
+				clocks = <0x12d>;
+				phandle = <0x505>;
+			};
+
+			clkdiv_out0_pll {
+				clocks = <0x13c>;
+				phandle = <0xce>;
+			};
+
+			clkdiv_out1_pll {
+				clocks = <0x13d>;
+				phandle = <0xd0>;
+			};
+
+			clkgt_out0 {
+				clocks = <0xb4>;
+				phandle = <0x13c>;
+			};
+
+			clkgt_out1 {
+				clocks = <0xb4>;
+				phandle = <0x13d>;
+			};
+
+			clk_gps_ref {
+				clocks = <0x13e>;
+				phandle = <0x506>;
+			};
+
+			clkmux_gps_ref {
+				clocks = <0x13f 0x140 0x141 0x141>;
+				phandle = <0x13e>;
+			};
+
+			clk_mdm2gps0 {
+				clocks = <0x142>;
+				phandle = <0x13f>;
+			};
+
+			clk_mdm2gps1 {
+				clocks = <0x142>;
+				phandle = <0x140>;
+			};
+
+			clk_mdm2gps2 {
+				clocks = <0x142>;
+				phandle = <0x141>;
+			};
+
+			abb_audio_en0 {
+				clocks = <0xac>;
+				phandle = <0x143>;
+			};
+
+			abb_audio_en1 {
+				clocks = <0xac>;
+				phandle = <0x144>;
+			};
+
+			abb_audio_gt0 {
+				clocks = <0x143>;
+				phandle = <0x507>;
+			};
+
+			abb_audio_gt1 {
+				clocks = <0x144>;
+				phandle = <0x508>;
+			};
+
+			clk_dp_audio_pll_ao {
+				clocks = <0x145>;
+				phandle = <0xd8>;
+			};
+
+			clk_dp_audio_pll_ao_div {
+				clocks = <0x146>;
+				phandle = <0x145>;
+			};
+
+			clk_dp_audio_pll_ao_gt {
+				clocks = <0xdf>;
+				phandle = <0x146>;
+			};
+
+			peri_volt_hold {
+				clocks = <0xaa>;
+				phandle = <0x147>;
+			};
+
+			peri_volt_middle {
+				clocks = <0xaa>;
+				phandle = <0x148>;
+			};
+
+			ics_volt_high {
+				clocks = <0x147>;
+				phandle = <0x509>;
+			};
+
+			ics_volt_middle {
+				clocks = <0x148>;
+				phandle = <0x50a>;
+			};
+
+			venc_volt_hold {
+				clocks = <0x147>;
+				phandle = <0x216>;
+			};
+
+			vdec_volt_hold {
+				clocks = <0x147>;
+				phandle = <0x50b>;
+			};
+
+			edc_volt_hold {
+				clocks = <0x147>;
+				phandle = <0x50c>;
+			};
+
+			efuse_volt_hold {
+				clocks = <0x148>;
+				phandle = <0x50d>;
+			};
+
+			ldi0_volt_hold {
+				clocks = <0x147>;
+				phandle = <0x50e>;
+			};
+
+			hise_volt_hold {
+				clocks = <0x147>;
+				phandle = <0x50f>;
+			};
+
+			clkmux_vdec {
+				clocks = <0x103 0xde 0xb4 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x149>;
+			};
+
+			clkgt_vdec {
+				clocks = <0x149>;
+				phandle = <0x14a>;
+			};
+
+			clkdiv_vdec {
+				clocks = <0x14a>;
+				phandle = <0x19f>;
+			};
+
+			clkmux_venc {
+				clocks = <0x103 0xde 0xb4 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x14b>;
+			};
+
+			clkgt_venc {
+				clocks = <0x14b>;
+				phandle = <0x14c>;
+			};
+
+			clkdiv_venc {
+				clocks = <0x14c>;
+				phandle = <0x1a0>;
+			};
+
+			clk_gt_16m_dp {
+				clocks = <0x14d>;
+				phandle = <0x14e>;
+			};
+
+			div_dpctrl16m {
+				clocks = <0x14e>;
+				phandle = <0x14f>;
+			};
+
+			clk_dpctrl_16m {
+				clocks = <0x14f>;
+				phandle = <0x22f>;
+			};
+
+			pclk_dpctrl {
+				clocks = <0xe2>;
+				phandle = <0x230>;
+			};
+
+			aclk_dpctrl {
+				clocks = <0x150>;
+				phandle = <0x231>;
+			};
+
+			clk_gt_mmc_dp {
+				clocks = <0xb4>;
+				phandle = <0x151>;
+			};
+
+			clk_div_dpctrl {
+				clocks = <0x151>;
+				phandle = <0x152>;
+			};
+
+			clk_mmc_dpctrl {
+				clocks = <0x152>;
+				phandle = <0x150>;
+			};
+
+			clk_isp_timer {
+				clocks = <0xaa>;
+				phandle = <0x510>;
+			};
+
+			clk_gt_isp_i2c {
+				clocks = <0xec>;
+				phandle = <0x153>;
+			};
+
+			clk_div_isp_i2c {
+				clocks = <0x153>;
+				phandle = <0x154>;
+			};
+
+			clk_isp_i2c_media {
+				clocks = <0x154>;
+				phandle = <0x180>;
+			};
+
+			clk_isp_snclk0 {
+				clocks = <0x155>;
+				phandle = <0x511>;
+			};
+
+			clk_isp_snclk1 {
+				clocks = <0x156>;
+				phandle = <0x512>;
+			};
+
+			clk_isp_snclk2 {
+				clocks = <0x157>;
+				phandle = <0x513>;
+			};
+
+			clk_mux_ispsn0 {
+				clocks = <0xaa 0x158>;
+				phandle = <0x155>;
+			};
+
+			clk_div_ispsn0 {
+				clocks = <0x14d>;
+				phandle = <0x158>;
+			};
+
+			clk_mux_ispsn1 {
+				clocks = <0xaa 0x159>;
+				phandle = <0x156>;
+			};
+
+			clk_div_ispsn1 {
+				clocks = <0x14d>;
+				phandle = <0x159>;
+			};
+
+			clk_mux_ispsn2 {
+				clocks = <0xaa 0x15a>;
+				phandle = <0x157>;
+			};
+
+			clk_div_ispsn2 {
+				clocks = <0x14d>;
+				phandle = <0x15a>;
+			};
+
+			clk_fac_ispsn {
+				clocks = <0x15b>;
+				phandle = <0x14d>;
+			};
+
+			clk_ispsn_gt {
+				clocks = <0xf4>;
+				phandle = <0x15b>;
+			};
+
+			clk_rxdphy0_cfg {
+				clocks = <0x15c>;
+				phandle = <0x514>;
+			};
+
+			clk_rxdphy1_cfg {
+				clocks = <0x15c>;
+				phandle = <0x515>;
+			};
+
+			clk_rxdphy2_cfg {
+				clocks = <0x15c>;
+				phandle = <0x516>;
+			};
+
+			clk_txdphy0_cfg {
+				clocks = <0xaa>;
+				phandle = <0x22a>;
+			};
+
+			clk_txdphy0_ref {
+				clocks = <0xaa>;
+				phandle = <0x228>;
+			};
+
+			clk_txdphy1_cfg {
+				clocks = <0xaa>;
+				phandle = <0x22b>;
+			};
+
+			clk_txdphy1_ref {
+				clocks = <0xaa>;
+				phandle = <0x229>;
+			};
+
+			clk_rxdcfg_gt {
+				clocks = <0xf4>;
+				phandle = <0x15d>;
+			};
+
+			clk_rxdcfg_fac {
+				clocks = <0x15d>;
+				phandle = <0x15e>;
+			};
+
+			clk_rxdcfg_mux {
+				clocks = <0x15e 0xaa>;
+				phandle = <0x15c>;
+			};
+
+			clk_mux_ics {
+				clocks = <0x103 0xde 0xb4 0x103 0xdc 0x103 0x103 0x103 0xdd 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x15f>;
+			};
+
+			clk_ics_gt {
+				clocks = <0x15f>;
+				phandle = <0x160>;
+			};
+
+			clk_div_ics {
+				clocks = <0x160>;
+				phandle = <0x1a1>;
+			};
+
+			pclk_loadmonitor {
+				clocks = <0xe3>;
+				phandle = <0x517>;
+			};
+
+			clk_loadmonitor {
+				clocks = <0x161>;
+				phandle = <0x518>;
+			};
+
+			clk_loadmonitor_div {
+				clocks = <0x162>;
+				phandle = <0x161>;
+			};
+
+			clk_loadmonitor_gt {
+				clocks = <0xec>;
+				phandle = <0x162>;
+			};
+
+			pclk_loadmonitor_l {
+				clocks = <0xe3>;
+				phandle = <0x519>;
+			};
+
+			clk_loadmonitor_l {
+				clocks = <0x161>;
+				phandle = <0x51a>;
+			};
+
+			clk_media_tcxo {
+				clocks = <0xaa>;
+				phandle = <0x17f>;
+			};
+
+			clkfac_180m {
+				clocks = <0xb3>;
+				phandle = <0x51b>;
+			};
+
+			abb_pll_gps_en0 {
+				clocks = <0x163>;
+				phandle = <0x164>;
+			};
+
+			abb_pll_gps_en1 {
+				clocks = <0x163>;
+				phandle = <0x165>;
+			};
+
+			abb_pll_gps_gt0 {
+				clocks = <0x164>;
+				phandle = <0x167>;
+			};
+
+			abb_pll_gps_gt1 {
+				clocks = <0x165>;
+				phandle = <0x166>;
+			};
+
+			clk_gps_fac {
+				clocks = <0x166>;
+				phandle = <0x51c>;
+			};
+
+			clk_gps {
+				clocks = <0x167>;
+				phandle = <0x240>;
+			};
+
+			autodiv_clknode0 {
+				clocks = <0xe2>;
+				phandle = <0x51d>;
+			};
+
+			autodiv_cfgbus {
+				clocks = <0xe7>;
+				phandle = <0x51e>;
+			};
+
+			autodiv_dmabus {
+				clocks = <0xe7>;
+				phandle = <0xf6>;
+			};
+
+			autodiv_emmc1bus {
+				clocks = <0xe7>;
+				phandle = <0x51f>;
+			};
+
+			autodiv_usb3otg {
+				clocks = <0xed>;
+				phandle = <0x520>;
+			};
+
+			autodiv_hclksd {
+				clocks = <0xed>;
+				phandle = <0x521>;
+			};
+
+			autodiv_isp_dvfs {
+				clocks = <0xe7>;
+				phandle = <0x168>;
+			};
+
+			autodiv_isp {
+				clocks = <0x168>;
+				phandle = <0x522>;
+			};
+
+			autodiv_socp_dvfs {
+				clocks = <0xf2>;
+				phandle = <0x169>;
+			};
+
+			autodiv_socp {
+				clocks = <0x169>;
+				phandle = <0x523>;
+			};
+
+			autodiv_secs {
+				clocks = <0xf2>;
+				phandle = <0x524>;
+			};
+
+			autodiv_secp {
+				clocks = <0xf2>;
+				phandle = <0x525>;
+			};
+
+			autodiv_perfstat {
+				clocks = <0xf2>;
+				phandle = <0x526>;
+			};
+
+			autodiv_atclk {
+				clocks = <0xf2>;
+				phandle = <0x527>;
+			};
+
+			autodiv_dma0 {
+				clocks = <0xf2>;
+				phandle = <0x528>;
+			};
+
+			autodiv_dma1 {
+				clocks = <0xf2>;
+				phandle = <0x529>;
+			};
+
+			clk_atdiv_mmc1 {
+				clocks = <0xe8>;
+				phandle = <0x52a>;
+			};
+
+			clk_atdiv_mmc0 {
+				clocks = <0xed>;
+				phandle = <0x52b>;
+			};
+
+			clk_atdiv_dma {
+				clocks = <0xf2>;
+				phandle = <0x52c>;
+			};
+
+			clk_atdiv_cfg {
+				clocks = <0xe3>;
+				phandle = <0x52d>;
+			};
+
+			clk_atdiv_sys {
+				clocks = <0xe2>;
+				phandle = <0x52e>;
+			};
+		};
+
+		media1_crgctrl@0xE87FF000 {
+			phandle = <0x52f>;
+
+			pclk_isp_noc_subsys {
+				clocks = <0xe2>;
+				phandle = <0x17e>;
+			};
+
+			aclk_isp_noc_subsys {
+				clocks = <0x16a>;
+				phandle = <0x16d>;
+			};
+
+			aclk_media_common {
+				clocks = <0x16b>;
+				phandle = <0x530>;
+			};
+
+			aclk_noc_dss {
+				clocks = <0x16b>;
+				phandle = <0x531>;
+			};
+
+			pclk_media_common {
+				clocks = <0x16c>;
+				phandle = <0x532>;
+			};
+
+			pclk_noc_dss_cfg {
+				clocks = <0x16c>;
+				phandle = <0x533>;
+			};
+
+			pclk_mmbuf_cfg {
+				clocks = <0x16c>;
+				phandle = <0x534>;
+			};
+
+			pclk_disp_noc_subsys {
+				clocks = <0xe2>;
+				phandle = <0x16c>;
+			};
+
+			aclk_disp_noc_subsys {
+				clocks = <0x16a>;
+				phandle = <0x16b>;
+			};
+
+			pclk_dss {
+				clocks = <0x16c>;
+				phandle = <0x219>;
+			};
+
+			clk_noc_ivp32_cfg {
+				clocks = <0xe2>;
+				phandle = <0x535>;
+			};
+
+			aclk_dss {
+				clocks = <0x16b>;
+				phandle = <0x1b6>;
+			};
+
+			aclk_isp {
+				clocks = <0x16d>;
+				phandle = <0x1b1>;
+			};
+
+			clk_vivobus2ddr {
+				clocks = <0x16e>;
+				phandle = <0x536>;
+			};
+
+			clk_vivobus_mux {
+				clocks = <0x103 0x103 0x16f 0x103 0x170 0x103 0x103 0x103 0x171 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x172>;
+			};
+
+			clk_vivobus_gt {
+				clocks = <0x172>;
+				phandle = <0x173>;
+			};
+
+			clk_vivobus_div {
+				clocks = <0x173>;
+				phandle = <0x16e>;
+			};
+
+			clk_vivobusfreq {
+				clocks = <0x16e>;
+				phandle = <0x537>;
+			};
+
+			clk_edc0 {
+				clocks = <0x174>;
+				phandle = <0x1af>;
+			};
+
+			clk_edc0_div {
+				clocks = <0x175>;
+				phandle = <0x174>;
+			};
+
+			clk_edc0_gt {
+				clocks = <0x176>;
+				phandle = <0x175>;
+			};
+
+			sel_edc0_pll {
+				clocks = <0x103 0x103 0x16f 0x103 0x170 0x103 0x103 0x103 0x171 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x176>;
+			};
+
+			clk_ldi0 {
+				clocks = <0x177>;
+				phandle = <0x1b0>;
+			};
+
+			clkdiv_ldi0 {
+				clocks = <0x178>;
+				phandle = <0x177>;
+			};
+
+			clkgt_ldi0 {
+				clocks = <0x179>;
+				phandle = <0x178>;
+			};
+
+			clkmux_ldi0 {
+				clocks = <0x103 0x17a 0x16f 0x103 0x170 0x103 0x103 0x103 0x171 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x179>;
+			};
+
+			clkmux_ldi1 {
+				clocks = <0x103 0x17a 0x16f 0x103 0x170 0x103 0x103 0x103 0x171 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x17b>;
+			};
+
+			clkgt_ldi1 {
+				clocks = <0x17b>;
+				phandle = <0x17c>;
+			};
+
+			clkdiv_ldi1 {
+				clocks = <0x17c>;
+				phandle = <0x17d>;
+			};
+
+			clk_ldi1freq {
+				clocks = <0x17d>;
+				phandle = <0x538>;
+			};
+
+			clk_ispcputocfg {
+				clocks = <0x17e>;
+				phandle = <0x539>;
+			};
+
+			clk_ispi2c_mux {
+				clocks = <0x17f 0x180>;
+				phandle = <0x181>;
+			};
+
+			clk_ispi2c {
+				clocks = <0x181>;
+				phandle = <0x1a6>;
+			};
+
+			clk_isp_sys {
+				clocks = <0x17f>;
+				phandle = <0x1a7>;
+			};
+
+			sel_ispcpu {
+				clocks = <0x103 0x182 0x16f 0x103 0x170 0x103 0x103 0x103 0x171 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x183>;
+			};
+
+			clk_ispcpu_gt {
+				clocks = <0x183>;
+				phandle = <0x184>;
+			};
+
+			clk_ispcpu_div {
+				clocks = <0x184>;
+				phandle = <0x185>;
+			};
+
+			clk_ispcpufreq {
+				clocks = <0x185>;
+				phandle = <0x53a>;
+			};
+
+			clk_ispfunc_to_ivp {
+				clocks = <0x186>;
+				phandle = <0x53b>;
+			};
+
+			clkmux_ispfunc {
+				clocks = <0x103 0x103 0x16f 0x103 0x170 0x103 0x103 0x103 0x171 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x187>;
+			};
+
+			clkgt_ispfunc {
+				clocks = <0x187>;
+				phandle = <0x188>;
+			};
+
+			clkdiv_ispfunc {
+				clocks = <0x188>;
+				phandle = <0x186>;
+			};
+
+			clk_ispfuncfreq {
+				clocks = <0x186>;
+				phandle = <0x53c>;
+			};
+
+			sel_media_common_pll {
+				clocks = <0x103 0x103 0x16f 0x103 0x170 0x103 0x103 0x103 0x171 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x189>;
+			};
+
+			clkgt_media_common {
+				clocks = <0x189>;
+				phandle = <0x18a>;
+			};
+
+			clkdiv_media_common {
+				clocks = <0x18a>;
+				phandle = <0x18b>;
+			};
+
+			clk_media_commonfreq {
+				clocks = <0x18b>;
+				phandle = <0x53d>;
+			};
+
+			clk_brg {
+				clocks = <0x18b>;
+				phandle = <0x53e>;
+			};
+
+			clk_ivpdsp_tcxo {
+				clocks = <0x17f>;
+				phandle = <0x53f>;
+			};
+
+			clk_ivpdsp_peri {
+				clocks = <0x18c>;
+				phandle = <0x540>;
+			};
+
+			clkmux_ivp32dsp {
+				clocks = <0x103 0x103 0x16f 0x103 0x170 0x103 0x103 0x103 0x171 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x18d 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x18e>;
+			};
+
+			clkgt_ivp32dsp {
+				clocks = <0x18e>;
+				phandle = <0x18f>;
+			};
+
+			clkdiv_ivpdsp {
+				clocks = <0x18f>;
+				phandle = <0x18c>;
+			};
+
+			clk_ivpdsp_corefreq {
+				clocks = <0x18c>;
+				phandle = <0x541>;
+			};
+
+			clkmux_fd_func {
+				clocks = <0x103 0x16f 0x170 0x171>;
+				phandle = <0x190>;
+			};
+
+			clkmux_jpg_func {
+				clocks = <0x103 0x16f 0x170 0x171>;
+				phandle = <0x191>;
+			};
+
+			clkgt_fd_func {
+				clocks = <0x190>;
+				phandle = <0x192>;
+			};
+
+			clkgt_jpg_func {
+				clocks = <0x191>;
+				phandle = <0x193>;
+			};
+
+			clk_fd_func_div {
+				clocks = <0x192>;
+				phandle = <0x194>;
+			};
+
+			clk_jpg_func_div {
+				clocks = <0x193>;
+				phandle = <0x195>;
+			};
+
+			clk_fd_funcfreq {
+				clocks = <0x194>;
+				phandle = <0x542>;
+			};
+
+			clk_jpg_funcfreq {
+				clocks = <0x195>;
+				phandle = <0x543>;
+			};
+
+			aclk_jpg {
+				clocks = <0x16d>;
+				phandle = <0x544>;
+			};
+
+			pclk_jpg {
+				clocks = <0x17e>;
+				phandle = <0x545>;
+			};
+
+			aclk_noc_isp {
+				clocks = <0x16d>;
+				phandle = <0x546>;
+			};
+
+			pclk_noc_isp {
+				clocks = <0x17e>;
+				phandle = <0x547>;
+			};
+
+			aclk_asc {
+				clocks = <0x196>;
+				phandle = <0x548>;
+			};
+
+			clk_dss_axi_mm {
+				clocks = <0x196>;
+				phandle = <0x1b7>;
+			};
+
+			clk_mmbuf {
+				clocks = <0x197>;
+				phandle = <0x196>;
+			};
+
+			pclk_mmbuf {
+				clocks = <0x198>;
+				phandle = <0x227>;
+			};
+
+			aclk_mmbuf_sw {
+				clocks = <0x103 0x103 0x16f 0x103 0x170 0x103 0x103 0x103 0x171 0x103 0x103 0x103 0x103 0x103 0x103 0x103>;
+				phandle = <0x19a>;
+			};
+
+			aclk_mmbuf_div {
+				clocks = <0x199>;
+				phandle = <0x197>;
+			};
+
+			clk_mmbuf_gt {
+				clocks = <0x19a>;
+				phandle = <0x199>;
+			};
+
+			pclk_mmbuf_div {
+				clocks = <0x19b>;
+				phandle = <0x198>;
+			};
+
+			pclk_mmbuf_gt {
+				clocks = <0x197>;
+				phandle = <0x19b>;
+			};
+
+			clk_atdiv_vivo {
+				clocks = <0x16e>;
+				phandle = <0x549>;
+			};
+
+			clk_atdiv_ispcpu {
+				clocks = <0x185>;
+				phandle = <0x54a>;
+			};
+
+			clk_atdiv_ivp {
+				clocks = <0x18c>;
+				phandle = <0x54b>;
+			};
+		};
+
+		iomcu_crgctrl@0xFFD7E000 {
+			phandle = <0x54c>;
+
+			clk_blpwm {
+				clocks = <0xd2>;
+				phandle = <0x54d>;
+			};
+
+			clk_i2c0 {
+				clocks = <0xd2>;
+			};
+
+			clk_i2c1_gt {
+				clocks = <0xd2>;
+				phandle = <0x19c>;
+			};
+
+			clk_i2c1 {
+				clocks = <0x19c>;
+			};
+
+			clk_i2c2 {
+				clocks = <0xd2>;
+			};
+
+			clk_i2c6_gt {
+				clocks = <0xd2>;
+				phandle = <0x19d>;
+			};
+
+			clk_i2c6 {
+				clocks = <0x19d>;
+			};
+
+			clk_spi0 {
+				clocks = <0xd2>;
+			};
+
+			clk_gate_peri0 {
+				clocks = <0xb3>;
+				phandle = <0x19e>;
+			};
+
+			clk_spi2 {
+				clocks = <0xd2>;
+			};
+
+			clk_uart3 {
+				clocks = <0x19e>;
+			};
+
+			clk_uart8 {
+				clocks = <0x19e>;
+				phandle = <0x54e>;
+			};
+
+			clk_uart7 {
+				clocks = <0x19e>;
+				phandle = <0x54f>;
+			};
+		};
+
+		media2_crgctrl@0xE8900000 {
+			phandle = <0x550>;
+
+			clk_vcodecbus {
+				clocks = <0x100>;
+				phandle = <0x1ac>;
+			};
+
+			clk_vdecfreq {
+				clocks = <0x19f>;
+				phandle = <0x551>;
+			};
+
+			pclk_vdec {
+				clocks = <0xe2>;
+				phandle = <0x552>;
+			};
+
+			aclk_vdec {
+				clocks = <0x100>;
+				phandle = <0x553>;
+			};
+
+			clk_vencfreq {
+				clocks = <0x1a0>;
+				phandle = <0x554>;
+			};
+
+			pclk_venc {
+				clocks = <0xe2>;
+				phandle = <0x555>;
+			};
+
+			aclk_venc {
+				clocks = <0x100>;
+				phandle = <0x556>;
+			};
+
+			clk_noc_ics_cfg {
+				clocks = <0xe2>;
+				phandle = <0x557>;
+			};
+
+			clk_noc_ics {
+				clocks = <0x100>;
+				phandle = <0x558>;
+			};
+
+			clk_icsfreq {
+				clocks = <0x1a1>;
+				phandle = <0x559>;
+			};
+
+			clk_atdiv_vcbus {
+				clocks = <0x100>;
+				phandle = <0x55a>;
+			};
+
+			clk_atdiv_vdec {
+				clocks = <0x19f>;
+				phandle = <0x55b>;
+			};
+
+			clk_atdiv_venc {
+				clocks = <0x1a0>;
+				phandle = <0x55c>;
+			};
+		};
+
+		clk_vdec {
+			phandle = <0x1b8>;
+		};
+
+		clk_venc {
+			phandle = <0x1b3>;
+		};
+
+		clk_ics {
+			phandle = <0x244>;
+		};
+
+		clk_ispfunc {
+			phandle = <0x1a5>;
+		};
+
+		clk_ispcpu {
+			phandle = <0x1a4>;
+		};
+
+		clk_vivobus {
+			phandle = <0x16a>;
+		};
+
+		clk_jpg_func {
+			phandle = <0x242>;
+		};
+
+		clk_fd_func {
+			phandle = <0x55d>;
+		};
+
+		clk_media_common {
+			phandle = <0x55e>;
+		};
+
+		clk_ivpdsp_core {
+			phandle = <0x1ae>;
+		};
+
+		clk_ldi1 {
+			phandle = <0x1b9>;
+		};
+
+		aclk_usb3otg {
+			phandle = <0x1ba>;
+		};
+	};
+
+	peri_dvfs@0xfff31000 {
+		phandle = <0x55f>;
+
+		pvp_edc0 {
+			phandle = <0x560>;
+		};
+
+		pvp_vdec {
+			phandle = <0x561>;
+		};
+
+		pvp_ics {
+			phandle = <0x562>;
+		};
+
+		pvp_ldi1 {
+			phandle = <0x563>;
+		};
+
+		pvp_venc {
+			phandle = <0x564>;
+		};
+
+		pvp_ispcpu {
+			phandle = <0x565>;
+		};
+
+		pvp_ispfunc {
+			phandle = <0x566>;
+		};
+
+		pvp_ivpcore {
+			phandle = <0x567>;
+		};
+
+		pvp_usb3otg {
+			phandle = <0x568>;
+		};
+
+		pvp_vivobus {
+			phandle = <0x569>;
+		};
+
+		pvp_ispjpg {
+			phandle = <0x56a>;
+		};
+
+		pvp_coresight {
+			phandle = <0x56b>;
+		};
+
+		pvp_ispfd {
+			phandle = <0x56c>;
+		};
+
+		pvp_mediacommon {
+			phandle = <0x56d>;
+		};
+
+		pvp_hold {
+			phandle = <0x56e>;
+		};
+
+		pvp_middle {
+			phandle = <0x56f>;
+		};
+	};
+
+	isp@e8400000 {
+		isp-clockdep-supply = <0x1a2>;
+		isp-core-supply = <0x1a3>;
+		clocks = <0x1a4 0x1a5 0x1a6 0x16a 0x1a7>;
+		iommus = <0x1a8>;
+		phandle = <0x570>;
+	};
+
+	isp_fastboot_cma {
+		memory-region = <0x1a9>;
+	};
+
+	regulator_ip@0xFFF35000 {
+		phandle = <0x571>;
+
+		ip@0 {
+			phandle = <0x1aa>;
+		};
+
+		ip@1 {
+			vivobus-supply = <0x1aa>;
+			clocks = <0x16a>;
+			phandle = <0x1ad>;
+		};
+
+		ip@13 {
+			phandle = <0x1ab>;
+		};
+
+		ip@2 {
+			vcodecsubsys-supply = <0x1ab>;
+			clocks = <0x1ac>;
+			phandle = <0x1b2>;
+		};
+
+		ip@3 {
+			ivp-supply = <0x1ad>;
+			clocks = <0x1ae>;
+			phandle = <0x221>;
+		};
+
+		ip@4 {
+			dsssubsys-supply = <0x1ad>;
+			clocks = <0x1af 0x1b0>;
+			phandle = <0x224>;
+		};
+
+		ip@5 {
+			ispsubsys-supply = <0x1ad>;
+			clocks = <0x1b1>;
+			phandle = <0x1a2>;
+		};
+
+		ip@6 {
+			vdec-supply = <0x1b2>;
+			phandle = <0x214>;
+		};
+
+		ip@7 {
+			venc-supply = <0x1b2>;
+			clocks = <0x1b3>;
+			phandle = <0x217>;
+		};
+
+		ip@8 {
+			isp_srt-supply = <0x1a2>;
+			phandle = <0x1a3>;
+		};
+
+		ip@11 {
+			phandle = <0x225>;
+		};
+
+		ip@12 {
+			ics-supply = <0x1b2>;
+			phandle = <0x243>;
+		};
+
+		ip@14 {
+			phandle = <0x572>;
+		};
+
+		ip@15 {
+			vdec_fake-supply = <0x1ab>;
+			phandle = <0x215>;
+		};
+
+		ip@16 {
+			venc_fake-supply = <0x1ab>;
+			phandle = <0x218>;
+		};
+	};
+
+	spmi@FFF24000 {
+		phandle = <0x573>;
+
+		pmic@0 {
+			gpios = <0x1b4 0x02 0x00>;
+			phandle = <0x1b5>;
+
+			ponkey@b1 {
+				interrupt-parent = <0x1b5>;
+				phandle = <0x574>;
+			};
+
+			usbvbus {
+				interrupt-parent = <0x1b5>;
+			};
+
+			ldo4@17 {
+				phandle = <0x24a>;
+			};
+
+			ldo13@1F {
+				phandle = <0x575>;
+			};
+
+			ldo15@21 {
+				phandle = <0x20a>;
+			};
+
+			ldo16@22 {
+				phandle = <0x576>;
+			};
+
+			ldo17@23 {
+				phandle = <0x24b>;
+			};
+
+			ldo19@25 {
+				phandle = <0x577>;
+			};
+
+			ldo20@26 {
+				phandle = <0x578>;
+			};
+
+			ldo21@27 {
+				phandle = <0x579>;
+			};
+
+			ldo24@2A {
+				phandle = <0x57a>;
+			};
+
+			ldo25@2B {
+				phandle = <0x57b>;
+			};
+
+			ldo32@31 {
+				phandle = <0x57c>;
+			};
+
+			ldo33@32 {
+				phandle = <0x57d>;
+			};
+
+			ldo34@33 {
+				phandle = <0x57e>;
+			};
+
+			pmic_mntn@a0 {
+				interrupt-parent = <0x1b5>;
+				phandle = <0x57f>;
+			};
+
+			hi6421v600_coul_spmi@1 {
+				interrupt-parent = <0x1b5>;
+				phandle = <0x580>;
+			};
+
+			pmic_led@a0 {
+				phandle = <0x581>;
+			};
+
+			pmic_rtc@a0 {
+				interrupt-parent = <0x1b5>;
+				phandle = <0x582>;
+			};
+
+			sim0 {
+				gpios = <0xa4 0x05 0x00>;
+				interrupt-parent = <0x1b5>;
+			};
+
+			sim1 {
+				gpios = <0xa4 0x05 0x00>;
+				interrupt-parent = <0x1b5>;
+			};
+		};
+
+		subpmic@6 {
+			phandle = <0x583>;
+		};
+	};
+
+	hwspinlock {
+		phandle = <0x584>;
+	};
+
+	pm_clk {
+		clocks = <0x1b6 0x1b1 0x1b0 0x1b7 0x1a5 0x1b8 0x1b3 0x16a 0x1af 0x1b9 0x1a4 0x1ae 0x1ba 0x1bb 0x1bc 0x1bd 0x1be 0x1bf 0x1c0 0x1c1 0x1c2 0x1c3 0x1c4 0x1c5 0x1c6>;
+		phandle = <0x585>;
+	};
+
+	ddr@fffc0000 {
+		phandle = <0x586>;
+	};
+
+	bootdevice {
+		phandle = <0x587>;
+	};
+
+	dwmmc0@FC183000 {
+		clocks = <0x1c6 0x1c7>;
+		pinctrl-0 = <0x1c8 0x1c9 0x1ca 0x1cb 0x1cc 0x1cd 0x1ce 0x1cf 0x1d0 0x1d1 0x1d2 0x1d3 0x1d4 0x1d5 0x1d6 0x1d7 0x1d8 0x1d9 0x1da 0x1db>;
+		pinctrl-1 = <0x1dc 0x1dd 0x1de 0x1df 0x1e0 0x1e1 0x1e2 0x1e3 0x1e4 0x1e5 0x1e6 0x1e7 0x1e8 0x1e9 0x1ea 0x1eb 0x1ec 0x1ed 0x1ee 0x1ef>;
+		phandle = <0x588>;
+
+		mmccard@0 {
+			phandle = <0x589>;
+		};
+	};
+
+	dwmmc1@FF37F000 {
+		clocks = <0x1c5 0x1f0>;
+		pinctrl-0 = <0x1f1 0x1f2 0x1f3 0x1f4 0x1f5 0x1f6 0x1f7 0x1f8 0x1f9 0x1fa 0x1fb 0x1fc>;
+		pinctrl-1 = <0x1fd 0x1fe 0x1ff 0x200 0x201 0x202 0x203 0x204 0x205 0x206 0x207 0x208>;
+		phandle = <0x58a>;
+	};
+
+	ufs@FF3c0000 {
+		clocks = <0x209>;
+		vcc-supply = <0x20a>;
+		phandle = <0x58b>;
+	};
+
+	ipc@e896b000 {
+		phandle = <0x58c>;
+	};
+
+	ipc@0xFFF22000 {
+		phandle = <0x58d>;
+	};
+
+	usb_phy@ff200000 {
+		clocks = <0x20b 0x1ba 0x1bb 0x20c 0x20d>;
+	};
+
+	hisi_usb@ff200000 {
+		phandle = <0x20e>;
+
+		dwc3@ff100000 {
+			extcon = <0x20e>;
+		};
+	};
+
+	crgctrl_for_usb {
+		phandle = <0x20f>;
+	};
+
+	combophy_regcfg {
+		misc_ctrl_reset_cfg = <0x20f 0x00 0x90 0xc0 0x00>;
+		misc_ctrl_unreset_cfg = <0x20f 0x00 0x94 0xc0 0x00>;
+		misc_ctrl_is_unreset_cfg = <0x20f 0x03 0x98 0x00 0xc0>;
+		misc_ctrl_is_clk_en_cfg = <0x20f 0x03 0x0c 0x2000000 0x2000000>;
+		phy_reset_cfg = <0x210 0x02 0xa0 0x00 0x02>;
+		phy_unreset_cfg = <0x210 0x02 0xa0 0x02 0x02>;
+		phy_isodis_cfg = <0x20f 0x00 0x148 0x2000000 0x00>;
+		exit_testpowerdown_cfg = <0x210 0x02 0x50 0x00 0x800000>;
+		power_stable_cfg = <0x210 0x02 0x54 0xa02 0xa02>;
+		is_controller_ref_clk_en_cfg = <0x20f 0x03 0x4c 0x01 0x01>;
+		is_controller_bus_clk_en_cfg = <0x20f 0x03 0x4c 0x02 0x02>;
+	};
+
+	smmu_lpae {
+		phandle = <0x58e>;
+	};
+
+	smmu_dss {
+		phandle = <0x226>;
+	};
+
+	smmu_cam {
+		phandle = <0x1a8>;
+	};
+
+	smmu_vcodec {
+		phandle = <0x213>;
+	};
+
+	smmu_ipu {
+		phandle = <0x245>;
+	};
+
+	efuse {
+		phandle = <0x58f>;
+	};
+
+	ramoops {
+		memory-region = <0x211>;
+	};
+
+	powerhold {
+		phandle = <0x590>;
+	};
+
+	hisee_mntn {
+		memory-region = <0x1a9>;
+	};
+
+	hifi-cma {
+		memory-region = <0x1a9>;
+	};
+
+	syscounter@0xFFF08000 {
+		phandle = <0x591>;
+	};
+
+	contexthub {
+		phandle = <0x592>;
+	};
+
+	ar {
+		phandle = <0x593>;
+	};
+
+	smart-plt {
+		phandle = <0x594>;
+	};
+
+	softtimer {
+		clocks = <0x212>;
+		phandle = <0x595>;
+	};
+
+	flp {
+		phandle = <0x596>;
+	};
+
+	vdec {
+		clocks = <0x1b8>;
+		iommus = <0x213>;
+		ldo_vdec-supply = <0x214>;
+		ldo_media-supply = <0x215>;
+	};
+
+	venc {
+		clocks = <0x1b3 0x216>;
+		iommus = <0x213>;
+		ldo_venc-supply = <0x217>;
+		ldo_media-supply = <0x218>;
+	};
+
+	huawei,hisi_isp160 {
+		clocks = <0x1b1 0x1b6 0x219>;
+		phandle = <0x597>;
+	};
+
+	huawei,hicam_buf {
+		iommus = <0x1a8>;
+	};
+
+	huawei,hjpeg {
+		phandle = <0x598>;
+	};
+
+	sensorhub {
+		phandle = <0x599>;
+
+		light {
+			phandle = <0x59a>;
+
+			als1 {
+				gpio_int1 = <0xa4 0x06 0x00>;
+			};
+		};
+
+		proximity {
+			phandle = <0x59b>;
+
+			ps1 {
+				gpio_int1 = <0xa4 0x06 0x00>;
+			};
+		};
+
+		gsensor {
+			phandle = <0x59c>;
+		};
+
+		gyroscope {
+			phandle = <0x59d>;
+		};
+
+		compass {
+			phandle = <0x59e>;
+		};
+
+		vibrator {
+			phandle = <0x59f>;
+		};
+
+		airpress {
+			phandle = <0x5a0>;
+		};
+
+		fingerprint {
+			phandle = <0x5a1>;
+		};
+
+		fingerprint_ud {
+			phandle = <0x5a2>;
+		};
+
+		gps_4774_i2c {
+			phandle = <0x5a3>;
+		};
+
+		sar {
+			phandle = <0x5a4>;
+		};
+	};
+
+	sensorhub_ex {
+		phandle = <0x5a5>;
+	};
+
+	sensorhub_io_power {
+		phandle = <0x5a6>;
+	};
+
+	ddrflux {
+		clocks = <0x10 0x21a>;
+		phandle = <0x5a7>;
+	};
+
+	hisee@0x0 {
+		memory-region = <0x1a9>;
+		phandle = <0x5a8>;
+	};
+
+	interrupt-controller@f7000000 {
+		phandle = <0x21f>;
+	};
+
+	pcie_kport {
+		phandle = <0x5a9>;
+	};
+
+	pcie_kport_rc@0xf4000000 {
+		clocks = <0x1bd 0x21b 0x21c 0x21d 0x21e>;
+		msi-parent = <0x21f>;
+		reset-gpio = <0x220 0x00 0x00>;
+		phandle = <0x5aa>;
+	};
+
+	pcie_kport_rc@0xf8000000 {
+		clocks = <0x1bd 0x21b 0x21c 0x21d 0x21e>;
+		msi-parent = <0x21f>;
+	};
+
+	pcie_kport_ep@0xf4000000 {
+		clocks = <0x1bd 0x21b 0x21c 0x21d 0x21e>;
+		reset-gpio = <0x220 0x00 0x00>;
+		phandle = <0x5ab>;
+	};
+
+	pcie_kport_ep@0xf8000000 {
+		clocks = <0x1bd 0x21b 0x21c 0x21d 0x21e>;
+	};
+
+	ivp_smmu@e8dc0000 {
+		iommus = <0x1a8>;
+		phandle = <0x5ac>;
+	};
+
+	hisi_ivp {
+		dev-ivp-supply = <0x221>;
+		dev-ivp-media-supply = <0x1aa>;
+		clocks = <0x1ae>;
+		phandle = <0x5ad>;
+	};
+
+	hisi_ivp_ipc {
+		phandle = <0x5ae>;
+	};
+
+	hisi_pmu_dump {
+		pmu_reg {
+			phandle = <0x223>;
+		};
+
+		debug_reg {
+			phandle = <0x222>;
+		};
+
+		cpu0 {
+			debug = <0x222>;
+			pmu = <0x223>;
+		};
+
+		cpu1 {
+			debug = <0x222>;
+			pmu = <0x223>;
+		};
+
+		cpu2 {
+			debug = <0x222>;
+			pmu = <0x223>;
+		};
+
+		cpu3 {
+			debug = <0x222>;
+			pmu = <0x223>;
+		};
+
+		cpu4 {
+			debug = <0x222>;
+			pmu = <0x223>;
+		};
+
+		cpu5 {
+			debug = <0x222>;
+			pmu = <0x223>;
+		};
+
+		cpu6 {
+			debug = <0x222>;
+			pmu = <0x223>;
+		};
+
+		cpu7 {
+			debug = <0x222>;
+			pmu = <0x223>;
+		};
+	};
+
+	secs_power_ctrl {
+		phandle = <0x5af>;
+	};
+
+	hw,pmucurr_test {
+		phandle = <0x5b0>;
+	};
+
+	battery {
+		phandle = <0x5b1>;
+	};
+
+	hisi_battery {
+		phandle = <0x5b2>;
+	};
+
+	huawei_ptst {
+		phandle = <0x5b3>;
+	};
+
+	chg_watchdog {
+		phandle = <0x5b4>;
+	};
+
+	direct_charge_ps {
+		phandle = <0x5b5>;
+	};
+
+	huawei_charger {
+		phandle = <0x5b6>;
+	};
+
+	vbus_monitor {
+		phandle = <0x5b7>;
+	};
+
+	vbus_channel_charger {
+		phandle = <0x5b8>;
+	};
+
+	vbus_channel_boost_gpio {
+		phandle = <0x5b9>;
+	};
+
+	soc_decimal {
+		phandle = <0x5ba>;
+	};
+
+	power_thermalzone {
+		phandle = <0x5bb>;
+	};
+
+	temp_control {
+		phandle = <0x5bc>;
+	};
+
+	bat_heating {
+		phandle = <0x5bd>;
+	};
+
+	btb_check {
+		phandle = <0x5be>;
+	};
+
+	wireless_charger {
+		phandle = <0x5bf>;
+	};
+
+	boost_5v {
+		phandle = <0x5c0>;
+	};
+
+	wired_channel_switch {
+		phandle = <0x5c1>;
+	};
+
+	ovp_channel_switch {
+		phandle = <0x5c2>;
+	};
+
+	ncp3902_channel_switch {
+		phandle = <0x5c3>;
+	};
+
+	vbat_ovp {
+		phandle = <0x5c4>;
+	};
+
+	direct_charger {
+		phandle = <0x5c5>;
+	};
+
+	dual_loadswitch {
+		phandle = <0x5c6>;
+	};
+
+	retail_demo_capacity_limit_control {
+		phandle = <0x5c7>;
+	};
+
+	charging_core {
+		phandle = <0x5c8>;
+	};
+
+	huawei_batt_soh {
+		phandle = <0x5c9>;
+	};
+
+	coul_core {
+		phandle = <0x5ca>;
+	};
+
+	hisi_coul_test {
+		phandle = <0x5cb>;
+	};
+
+	soft_isc {
+		phandle = <0x5cc>;
+	};
+
+	fastboot_battery {
+		phandle = <0x5cd>;
+	};
+
+	fastboot_charger {
+		phandle = <0x5ce>;
+	};
+
+	fastboot_charge_vibrate {
+		phandle = <0x5cf>;
+	};
+
+	usb_short_circuit_protect {
+		phandle = <0x5d0>;
+	};
+
+	desayatl_3900_39k_4384 {
+		phandle = <0x5d1>;
+	};
+
+	scudlg_3900_200k_4384_25 {
+		phandle = <0x5d2>;
+	};
+
+	sunwodasony_3900_110k_4384_15 {
+		phandle = <0x5d3>;
+	};
+
+	powerhal@0 {
+		phandle = <0x5d4>;
+	};
+
+	weights@0 {
+		phandle = <0x5d5>;
+	};
+
+	tsens@0 {
+		phandle = <0x5d6>;
+	};
+
+	hisi_tm@1 {
+		phandle = <0x5d7>;
+	};
+
+	shell_frame@0 {
+		phandle = <0x5d8>;
+	};
+
+	shell_front@0 {
+		phandle = <0x5d9>;
+	};
+
+	shell_back@0 {
+		phandle = <0x5da>;
+	};
+
+	hisi_ambient@0 {
+		phandle = <0x5db>;
+	};
+
+	hisi_usb3otg_bc@ff200000 {
+		phandle = <0x210>;
+	};
+
+	pddevice {
+		clocks = <0x1bb 0x20d>;
+		phandle = <0x5dc>;
+	};
+
+	test_regu_ip@0xFFF35000 {
+		vivobustest-supply = <0x1ad>;
+		dsssubsystest-supply = <0x224>;
+		vcodecsubsystest-supply = <0x1b2>;
+		vdectest-supply = <0x214>;
+		venctest-supply = <0x217>;
+		ispsubsystest-supply = <0x1a2>;
+		ivptest-supply = <0x221>;
+		mmbuftest-supply = <0x225>;
+		phandle = <0x5dd>;
+	};
+
+	framebuffer@E8600000 {
+		iommus = <0x226>;
+		regulator_dsssubsys-supply = <0x224>;
+		regulator_mmbuf-supply = <0x225>;
+		regulator_media_subsys-supply = <0x1aa>;
+		clocks = <0x1b6 0x219 0x1af 0x1b0 0x1b9 0x1b7 0x227 0x228 0x229 0x22a 0x22b 0x22c 0x22d 0x22e 0x22f 0x230 0x231>;
+		phandle = <0x5de>;
+	};
+
+	chosen {
+		phandle = <0x5df>;
+	};
+
+	timerslice@0xFFF0A000 {
+		phandle = <0x5e0>;
+	};
+
+	ipc_hisi_modem@0xFF011000 {
+		phandle = <0x5e1>;
+	};
+
+	ipc_hisi_modem_s@0xFF010000 {
+		phandle = <0x5e2>;
+	};
+
+	ipc_hisi_v230_mdm@0xFFF21000 {
+		phandle = <0x5e3>;
+	};
+
+	sysctrl_app {
+		phandle = <0x5e4>;
+	};
+
+	cp_reset@0 {
+		phandle = <0x5e5>;
+	};
+
+	sysctrl_fiq {
+		phandle = <0x5e6>;
+	};
+
+	mperf@mem {
+		memory-region = <0x232>;
+		phandle = <0x5e7>;
+	};
+
+	dsp@49000000 {
+		phandle = <0x5e8>;
+	};
+
+	socp1@ff060000 {
+		phandle = <0x5e9>;
+	};
+
+	socp1@mem {
+		memory-region = <0x233>;
+		phandle = <0x5ea>;
+	};
+
+	deflate1@ff061000 {
+		phandle = <0x5eb>;
+	};
+
+	coresight-tmc-cp {
+		etf@EC0C1000 {
+			phandle = <0x234>;
+		};
+
+		etf@EC0C2000 {
+			phandle = <0x235>;
+		};
+	};
+
+	coresight-etm-cp {
+		ptm@EC0FC000 {
+			coresight-child-list = <0x234>;
+			phandle = <0x5ec>;
+		};
+
+		ptm@EC0FD000 {
+			coresight-child-list = <0x235>;
+			phandle = <0x5ed>;
+		};
+	};
+
+	coresight-tmc-cp-es {
+		etf@EC081000 {
+			phandle = <0x5ee>;
+		};
+
+		etf@EC082000 {
+			phandle = <0x5ef>;
+		};
+	};
+
+	coresight-etm-cp-es {
+		ptm@EC0BC000 {
+			phandle = <0x5f0>;
+		};
+
+		ptm@EC0BD000 {
+			phandle = <0x5f1>;
+		};
+	};
+
+	apr_config {
+		drv_info {
+			phandle = <0x5f2>;
+		};
+
+		osa_info {
+			phandle = <0x5f3>;
+		};
+
+		pam_info {
+			phandle = <0x5f4>;
+		};
+
+		cttf_info {
+			phandle = <0x5f5>;
+		};
+
+		cas_info {
+			phandle = <0x5f6>;
+		};
+
+		cproc_info {
+			phandle = <0x5f7>;
+		};
+
+		guas_info {
+			phandle = <0x5f8>;
+		};
+
+		gunas_info {
+			phandle = <0x5f9>;
+		};
+
+		gudsp_info {
+			phandle = <0x5fa>;
+		};
+
+		tlps_info {
+			phandle = <0x5fb>;
+		};
+
+		tldsp_info {
+			phandle = <0x5fc>;
+		};
+
+		cphy_info {
+			phandle = <0x5fd>;
+		};
+
+		rtt_info {
+			phandle = <0x5fe>;
+		};
+
+		cnas_info {
+			phandle = <0x5ff>;
+		};
+
+		ims_info {
+			phandle = <0x600>;
+		};
+
+		rtosck_info {
+			phandle = <0x601>;
+		};
+	};
+
+	dlock_irq {
+		phandle = <0x602>;
+	};
+
+	bus_state {
+		phandle = <0x603>;
+	};
+
+	bus_reset_reg {
+		phandle = <0x604>;
+	};
+
+	ipf1@ff038000 {
+		clocks = <0x236>;
+		phandle = <0x605>;
+	};
+
+	psam1@ff040000 {
+		clocks = <0x237>;
+		phandle = <0x606>;
+	};
+
+	hw_soundtrigger_event {
+		phandle = <0x607>;
+	};
+
+	audio_hw_config {
+		phandle = <0x608>;
+	};
+
+	deviceboxID@0 {
+		pinctrl-0 = <0x1f1 0x1f7>;
+		pinctrl-1 = <0x1fd 0x203>;
+		phandle = <0x609>;
+	};
+
+	smartpakit {
+		phandle = <0x60a>;
+	};
+
+	anc_hs@0 {
+		gpios = <0x1b4 0x02 0x00 0x238 0x04 0x00>;
+		phandle = <0x60b>;
+	};
+
+	invert_hs@0 {
+		pinctrl-0 = <0x239 0x23a>;
+		pinctrl-1 = <0x23b 0x23c>;
+		phandle = <0x60c>;
+	};
+
+	extern_dac_vir_dai@0 {
+		phandle = <0x60d>;
+	};
+
+	maxim_ioctl {
+		gpio_rcv_en2 = <0x23d 0x00 0x00>;
+		phandle = <0x60e>;
+	};
+
+	tfa98xx_ioctl {
+		gpio_rcv_en2 = <0x23d 0x00 0x00>;
+	};
+
+	gps_power {
+		huawei,gps_en = <0x23e 0x06 0x00>;
+		clocks = <0x23f 0x240>;
+		phandle = <0x60f>;
+	};
+
+	peripherals {
+		phandle = <0x610>;
+
+		dma@fdf30000 {
+			clocks = <0x241 0x28>;
+		};
+
+		clk6250khz {
+			phandle = <0x611>;
+		};
+	};
+
+	jpu@E8301000 {
+		iommus = <0x1a8>;
+		jpu-regulator-supply = <0x1a2>;
+		media1-regulator-supply = <0x1aa>;
+		clocks = <0x242>;
+		phandle = <0x612>;
+	};
+
+	cambricon-ipu@ff400000 {
+		vipu-supply = <0x243>;
+		clocks = <0x244>;
+		iommus = <0x245>;
+	};
+
+	a1@0xFF012000 {
+		clocks = <0x1be 0x1bf 0x1c0>;
+		phandle = <0x613>;
+	};
+
+	psci {
+		phandle = <0x614>;
+	};
+
+	hisi,memlat-cpu4@fff31000 {
+		phandle = <0x246>;
+	};
+
+	hisi,arm-memlat-mon-4 {
+		hisi,target-dev = <0x246>;
+	};
+
+	hw_connectivity {
+		phandle = <0x615>;
+	};
+
+	devcheck {
+		phandle = <0x616>;
+	};
+
+	hall {
+		phandle = <0x617>;
+
+		huawei,hall_0 {
+			huawei,single-n-pole = <0xa4 0x07 0x00>;
+		};
+	};
+
+	irda_maxim {
+		gpio_power_control = <0x247 0x00 0x00>;
+		phandle = <0x618>;
+	};
+
+	pd_dpm {
+		phandle = <0x619>;
+	};
+
+	huawei_usb {
+		phandle = <0x61a>;
+	};
+
+	huawei_usbvbus {
+		phandle = <0x61b>;
+	};
+
+	bluetooth_power {
+		clocks = <0x248>;
+		phandle = <0x61c>;
+	};
+
+	bluetooth_sleep {
+		phandle = <0x61d>;
+	};
+
+	lcdkit_default_auo_otm1901a_5p2_1080p_video_default {
+		hw,lcdkit-gpios = <0x1b4 0x02 0x00 0x34 0x03 0x00 0x249 0x04 0x00 0x2b 0x02 0x00 0x2a 0x04 0x00 0x1b4 0x03 0x00>;
+		lcdio-vcc-supply = <0x24a>;
+		lcdanalog-vcc-supply = <0x24b>;
+		pinctrl-0 = <0x24c 0x24d>;
+		pinctrl-1 = <0x24e 0x24f>;
+		phandle = <0x61e>;
+	};
+
+	lcdkit_neo_tugl_auo_otm1901a_5p2_1080p_video_default {
+		hw,lcdkit-gpios = <0x1b4 0x02 0x00 0x34 0x03 0x00 0x249 0x04 0x00 0x2b 0x02 0x00 0x2a 0x04 0x00 0x1b4 0x03 0x00>;
+		lcdio-vcc-supply = <0x24a>;
+		lcdanalog-vcc-supply = <0x24b>;
+		pinctrl-0 = <0x250 0x251>;
+		pinctrl-1 = <0x252 0x253>;
+		phandle = <0x61f>;
+	};
+
+	lcdkit_neo_tugl_boe_sw43404_5p99 {
+		hw,lcdkit-gpios = <0x1b4 0x02 0x00 0x34 0x03 0x00 0x249 0x04 0x00 0x2b 0x02 0x00 0x2a 0x04 0x00 0x1b4 0x03 0x00>;
+		lcdio-vcc-supply = <0x24a>;
+		lcdanalog-vcc-supply = <0x24b>;
+		pinctrl-0 = <0x250 0x251>;
+		pinctrl-1 = <0x252 0x253>;
+		phandle = <0x620>;
+	};
+
+	lcdkit_neo_tugl_lg_ea9151_5p99 {
+		hw,lcdkit-gpios = <0x1b4 0x02 0x00 0x34 0x03 0x00 0x249 0x04 0x00 0x2b 0x02 0x00 0x2a 0x04 0x00 0x1b4 0x03 0x00>;
+		lcdio-vcc-supply = <0x24a>;
+		lcdanalog-vcc-supply = <0x24b>;
+		pinctrl-0 = <0x250 0x251>;
+		pinctrl-1 = <0x252 0x253>;
+		phandle = <0x621>;
+	};
+
+	bastet {
+		phandle = <0x622>;
+	};
+
+	hifi_virtual_voice_proxy {
+		phandle = <0x623>;
+	};
+
+	rootparam {
+		phandle = <0x624>;
+	};
+
+	cpufreq-bL {
+		phandle = <0x625>;
+	};
+
+	fastboot_buckboost {
+		phandle = <0x626>;
+	};
+
+	huawei_cpu_buck {
+		phandle = <0x627>;
+	};
+
+	huawei_hi6422v200_pmu1 {
+		phandle = <0x628>;
+	};
+
+	huawei_hi6422v200_pmu2 {
+		phandle = <0x629>;
+	};
+
+	huawei_smpl {
+		phandle = <0x62a>;
+	};
+
+	fastboot_recovery {
+		phandle = <0x62b>;
+	};
+
+	hisi_vibrator@fff34000 {
+		phandle = <0x62c>;
+	};
+
+	fastboot {
+		phandle = <0x62d>;
+	};
+
+	pmu@FFF34000 {
+		phandle = <0x62e>;
+	};
+
+	sysctrl@fff0a000 {
+		phandle = <0x62f>;
+	};
+
+	pctrl@e8a09000 {
+		phandle = <0x630>;
+	};
+
+	crgctrl@fff35000 {
+		phandle = <0x631>;
+	};
+
+	crgctrl@0xFFD7e000 {
+		phandle = <0x632>;
+	};
+
+	pmctrl@fff31000 {
+		phandle = <0x633>;
+	};
+
+	media1ctrl@e87FF000 {
+		phandle = <0x634>;
+	};
+
+	media2ctrl@e8900000 {
+		phandle = <0x635>;
+	};
+
+	hisi_axierr {
+		phandle = <0x636>;
+	};
+
+	hisi_reset {
+		phandle = <0x637>;
+	};
+
+	uartctl {
+		phandle = <0x638>;
+	};
+
+	nfc_exist {
+		phandle = <0x639>;
+	};
+
+	hisi_gpio_key {
+		phandle = <0x63a>;
+	};
+
+	dp_aux_switch {
+		phandle = <0x63b>;
+	};
+
+	panel_pwm {
+		phandle = <0x63c>;
+	};
+
+	panel_blpwm {
+		phandle = <0x63d>;
+	};
+
+	panel_lcdc_fake {
+		phandle = <0x63e>;
+	};
+
+	panel_mipi_fake {
+		phandle = <0x63f>;
+	};
+
+	panel_hdmi_fake {
+		phandle = <0x640>;
+	};
+
+	panel_dp_fake {
+		phandle = <0x641>;
+	};
+
+	sound_DA_combine_v3 {
+		phandle = <0x642>;
+	};
+
+	hi6210_hifi {
+		phandle = <0x643>;
+	};
+
+	hisi_dp_machine {
+		phandle = <0x644>;
+	};
+
+	asp_hdmi_dmac@E804B400 {
+		phandle = <0x645>;
+	};
+
+	asp_cfg@0xe804e000 {
+		phandle = <0x646>;
+	};
+
+	dp_i2s {
+		phandle = <0x647>;
+	};
+
+	dp_audio@0 {
+		phandle = <0x648>;
+	};
+
+	hisi-pcm-dp {
+		phandle = <0x649>;
+	};
+
+	asp_irq@E804E000 {
+		phandle = <0x64a>;
+	};
+
+	slimbus_dai@0 {
+		phandle = <0x64b>;
+	};
+
+	sio@E804F000 {
+		phandle = <0x64c>;
+	};
+
+	sio@E804F400 {
+		phandle = <0x64d>;
+	};
+
+	sio@E804F800 {
+		phandle = <0x64e>;
+	};
+
+	sio@E804FC00 {
+		phandle = <0x64f>;
+	};
+
+	soundtrigger@E804B000 {
+		phandle = <0x650>;
+	};
+
+	hi64xx_asp_dmac@E804B000 {
+		phandle = <0x651>;
+	};
+
+	hifidsp {
+		phandle = <0x652>;
+	};
+
+	sochifi_watchdog {
+		phandle = <0x653>;
+	};
+
+	asp_dmac@E804B000 {
+		phandle = <0x654>;
+	};
+
+	usbaudio_dsp {
+		phandle = <0x655>;
+	};
+
+	usb_analog_hs_interface {
+		phandle = <0x656>;
+	};
+
+	usb_ana_hs_fsa4476 {
+		swtich_en1 = <0x249 0x01 0x00>;
+		swtich_en2 = <0x249 0x02 0x00>;
+		phandle = <0x657>;
+	};
+
+	usb_audio_power {
+		phandle = <0x658>;
+	};
+
+	anc_hs_default@0 {
+		phandle = <0x659>;
+	};
+
+	sensorhub_status {
+		phandle = <0x65a>;
+	};
+
+	sensorhub_nmi {
+		phandle = <0x65b>;
+	};
+
+	aod {
+		phandle = <0x65c>;
+	};
+
+	huawei,hisi_fd {
+		phandle = <0x65d>;
+	};
+
+	hisi,hisi_camera {
+		phandle = <0x65e>;
+	};
+
+	huawei,imx486hybird {
+		phandle = <0x65f>;
+	};
+
+	huawei,imx319 {
+		phandle = <0x660>;
+	};
+
+	huawei,ov13a40 {
+		phandle = <0x661>;
+	};
+
+	huawei,imx386hybird {
+		phandle = <0x662>;
+	};
+
+	huawei,imx318hybird {
+		phandle = <0x663>;
+	};
+
+	huawei,imx600hybrid {
+		phandle = <0x664>;
+	};
+
+	huawei,imx576 {
+		phandle = <0x665>;
+	};
+
+	huawei,camera_ldo {
+		phandle = <0x666>;
+	};
+
+	bcm_wifi {
+		phandle = <0x667>;
+	};
+
+	bcm_bt {
+		phandle = <0x668>;
+	};
+
+	fingerprint {
+		phandle = <0x669>;
+	};
+
+	irda {
+		phandle = <0x66a>;
+	};
+
+	touchscreen {
+		phandle = <0x66b>;
+	};
+
+	huawei_dual_charger {
+		phandle = <0x66c>;
+	};
+
+	ts_kit {
+		phandle = <0x66d>;
+
+		touchscreen@49 {
+			phandle = <0x66e>;
+		};
+	};
+
+	__symbols__ {
+		cc_anti_corrosion = "/cc_anti_corrosion";
+	};
+};

@@ -1,0 +1,10 @@
+/dts-v1/;
+
+/include/ "../variants/clt-l04.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x05 0x04 0x03>;
+	hisi,boardname = "CHARLOTTE_CAN_V4";
+	hisi,modem_id = <0x3903bc00>;
+	hisi,product_id = <0x3903bc00>;
+};

@@ -1,0 +1,20 @@
+/dts-v1/;
+
+/include/ "../variants/vce-al00.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x09 0x07 0x01>;
+	hisi,boardname = "VCE_AL00_VA";
+	hisi,modem_id = "9e", "";
+	hisi,product_name = "VCE-AL00";
+
+	pinmux@e896c800 {
+		gpio030_cfg_func {
+			pinctrl-single,bias-pulldown = <0x02 0x02 0x00 0x02>;
+		};
+
+		gpio030_cfg_idle {
+			pinctrl-single,bias-pulldown = <0x02 0x02 0x00 0x02>;
+		};
+	};
+};

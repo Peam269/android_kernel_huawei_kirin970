@@ -1,0 +1,10 @@
+/dts-v1/;
+
+/include/ "../variants/clt-al00.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x05 0x02 0x00>;
+	hisi,boardname = "CHARLOTTE_TUGL_V1";
+	hisi,modem_id = <0x39030000>;
+	hisi,product_id = <0x39030000>;
+};

@@ -1,0 +1,63 @@
+/dts-v1/;
+
+/include/ "../variants/alp-lx9.dtsi"
+
+/ {
+	hisi,boardid = <0x06 0x04 0x00 0x08>;
+	hisi,boardname = "ALPS_LX9_V1_CS";
+	hisi,modem_id = <0x39001800>;
+	hisi,product_id = <0x39001800>;
+
+	amba {
+		i2c@FDF0D000 {
+			huawei,lm3646@67 {
+				huawei,led-type = <0x01>;
+				huawei,flash-current = <0x7c 0x7f 0x00>;
+			};
+
+			huawei,mp3336@27 {
+				huawei,led-type = <0x01>;
+				huawei,flash-current = <0xbe 0xbe 0x00>;
+			};
+		};
+
+		i2c@FFD6A000 {
+			hi6523_charger_i2c6@6B {
+				fcp_support = <0x01>;
+				scp_support = <0x01>;
+			};
+
+			fsa9685_i2c6@25 {
+				status = "disabled";
+			};
+		};
+	};
+
+	hisi_usb@ff200000 {
+		set_hi_impedance = <0x00>;
+	};
+
+	sensorhub {
+		gsensor {
+			acc1 {
+				negate_z = <0x00>;
+			};
+		};
+
+		gyroscope {
+			gyro1 {
+				axis_map_x = <0x01>;
+				axis_map_y = <0x00>;
+				negate_z = <0x00>;
+			};
+		};
+	};
+
+	direct_charger {
+		scp_work_on_charger = <0x01>;
+	};
+
+	devcheck {
+		usb_switch = <0x00>;
+	};
+};
